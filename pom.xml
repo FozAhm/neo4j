@@ -818,6 +818,26 @@
           <artifactId>sonar-maven-plugin</artifactId>
           <version>3.9.1.2184</version>
         </plugin>
+
+        <!-- Jacoco plugin configuration -->
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.12</version>
+            <executions>
+                <execution>
+                    <id>report</id>
+                    <phase>none</phase> <!-- No automatic report generation in the test phase -->
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <destFile>${project.build.directory}/jacoco.exec</destFile> <!-- Specify the destination of the exec file -->
+                <output>file</output>
+            </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
 
@@ -913,6 +933,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
       </plugin>
+
+      <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+        </plugin>
 
     </plugins>
   </build>
