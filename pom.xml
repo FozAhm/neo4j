@@ -834,7 +834,7 @@
                 </execution>
             </executions>
             <configuration>
-                <destFile>${project.build.directory}/jacoco.exec</destFile> <!-- Specify the destination of the exec file -->
+                <destFile>${project.build.directory}/${project.artifactId}-jacoco.exec</destFile> <!-- Specify the destination of the exec file -->
                 <output>file</output>
             </configuration>
         </plugin>
@@ -934,9 +934,11 @@
         <artifactId>maven-enforcer-plugin</artifactId>
       </plugin>
 
+       <!-- Jacoco plugin inherited from pluginManagement -->
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
+        <!-- Version and other configurations are inherited from pluginManagement -->
       </plugin>
 
     </plugins>
