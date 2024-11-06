@@ -30,16 +30,20 @@ import org.neo4j.cypher.internal.runtime.spec.LogicalQueryBuilder
 import org.neo4j.cypher.internal.runtime.spec.RowCount
 import org.neo4j.cypher.internal.runtime.spec.RuntimeTestSuite
 import org.neo4j.cypher.internal.runtime.spec.tests.ExpandAllTestBase.smallTestGraph
+import org.neo4j.cypher.internal.runtime.spec.tests.ExpandIntoRandomTest.ThinRelationship
 import org.neo4j.exceptions.ParameterWrongTypeException
 import org.neo4j.graphdb.Label
 import org.neo4j.graphdb.Node
 import org.neo4j.graphdb.RelationshipType
+import org.scalacheck.Gen
+import org.scalatestplus.scalacheck.ScalaCheckPropertyChecks
 
 abstract class ExpandIntoTestBase[CONTEXT <: RuntimeContext](
   edition: Edition[CONTEXT],
   runtime: CypherRuntime[CONTEXT],
   protected val sizeHint: Int
-) extends RuntimeTestSuite[CONTEXT](edition, runtime) {
+) extends RuntimeTestSuite[CONTEXT](edition, runtime)
+    with ExpandIntoRandomTest[CONTEXT] {
 
   test("should expand into and provide variables for relationship - outgoing") {
     // given
@@ -992,4 +996,96 @@ trait ExpandIntoWithOtherOperatorsTestBase[CONTEXT <: RuntimeContext] {
       node.createRelationshipTo(tx.createNode(Label.label("IGNORE")), RelationshipType.withName("IGNORE"))
     )
   }
+}
+
+/**
+ * Tests expand into with random graphs.
+ */
+trait ExpandIntoRandomTest[CONTEXT <: RuntimeContext] extends ScalaCheckPropertyChecks {
+  self: RuntimeTestSuite[CONTEXT] =>
+
+  test("expand into should handle random graphs") {
+    def expandIntoPlan(relPattern: String) = {
+      new LogicalQueryBuilder(this)
+        .produceResults("from", "to", "rel")
+        .projection("elementId(a) AS from", "elementId(b) AS to", "elementId(r) AS rel")
+        .expandInto(s"(a)$relPattern(b)")
+        .cartesianProduct()
+        .|.allNodeScan("b")
+        .allNodeScan("a")
+        .build()
+    }
+    val aLikesBPlan = expandIntoPlan("-[r:LIKES]->")
+    val bLikesAPlan = expandIntoPlan("<-[r:LIKES]-")
+    val aLikesBOrBLikesAPlan = expandIntoPlan("-[r:LIKES]-")
+
+    val aLovesB = expandIntoPlan("-[r:LOVES]->")
+    val aLikesOrLovesB = expandIntoPlan("-[r:LIKES|LOVES]->")
+
+    forAll(genRandomGraph(Seq("LIKES", "LOVES")), minSuccessful(20)) { createGraph =>
+      val relationships = given {
+        // Clean previous data
+        tx.getAllRelationships.forEach(r => r.delete())
+        tx.getAllNodes.forEach(n => n.delete())
+
+        createGraph()
+      }
+
+      def expected(relTypePredicate: String => Boolean) = relationships
+        .filter(r => relTypePredicate(r.relType))
+        .map(r => Array(r.from, r.to, r.id))
+
+      execute(aLikesBPlan, runtime) should beColumns("from", "to", "rel")
+        .withRows(inAnyOrder(expected(_ == "LIKES")))
+
+      val expectedReversed = relationships.filter(_.relType == "LIKES").map(r => Array(r.to, r.from, r.id))
+      execute(bLikesAPlan, runtime) should beColumns("from", "to", "rel")
+        .withRows(inAnyOrder(expectedReversed))
+
+      val expectedBoth = relationships
+        .filter(_.relType == "LIKES")
+        .flatMap {
+          case r if r.from == r.to => Seq(Array(r.from, r.to, r.id))
+          case r                   => Seq(Array(r.from, r.to, r.id), Array(r.to, r.from, r.id))
+        }
+      execute(aLikesBOrBLikesAPlan, runtime) should beColumns("from", "to", "rel")
+        .withRows(inAnyOrder(expectedBoth))
+
+      execute(aLovesB, runtime) should beColumns("from", "to", "rel")
+        .withRows(inAnyOrder(expected(_ == "LOVES")))
+
+      execute(aLikesOrLovesB, runtime) should beColumns("from", "to", "rel")
+        .withRows(inAnyOrder(expected(relType => relType == "LIKES" || relType == "LOVES")))
+    }
+  }
+
+  private def genRandomGraph(relTypes: Seq[String]): Gen[() => Seq[ThinRelationship]] = {
+    val minNodes = 10
+    val maxNodes = 40
+    val relationshipProb = 0.1
+    for {
+      nodeCount <- Gen.choose(minNodes, maxNodes)
+      shouldRelate <- Gen.infiniteStream(Gen.prob(relationshipProb)).map(_.iterator)
+    } yield {
+      () =>
+        val nodes = Range(0, nodeCount)
+          .map(_ => tx.createNode())
+          .toIndexedSeq
+
+        for {
+          relTypeName <- relTypes :+ "Unrelated"
+          relType = RelationshipType.withName(relTypeName)
+          nodeA <- nodes
+          nodeB <- nodes
+          if shouldRelate.next()
+        } yield {
+          val rel = nodeA.createRelationshipTo(nodeB, relType)
+          ThinRelationship(rel.getElementId, relTypeName, nodeA.getElementId, nodeB.getElementId)
+        }
+    }
+  }
+}
+
+object ExpandIntoRandomTest {
+  case class ThinRelationship(id: String, relType: String, from: String, to: String)
 }
