@@ -739,7 +739,7 @@
         </executions>
         <configuration>
           <upToDateChecking>
-            <enabled>true</enabled>
+            <enabled>false</enabled>
           </upToDateChecking>
           <java>
             <palantirJavaFormat />
