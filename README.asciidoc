@@ -41,6 +41,8 @@ Before you start running the unit and integration tests in the Neo4j Maven proje
 * In case you just want the jars, without running tests, this is for you: `mvn clean install -DskipTests -T1C`.
 * You may need to increase the memory available to Maven: `export MAVEN_OPTS="-Xmx2048m"`.
 * You may run into problems resolving `org.neo4j.build:build-resources` due to a bug in maven. To resolve this simply invoke `mvn clean install -pl build-resources`.
+* To build this project in 2024 with a Ubuntu 24.04 please run the follwing:
+* `mvn clean install -DskipTests -T1C -Doverwrite -DargLine="--add-exports jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED" -Dspotless.check.skip=true`
 
 == Running Neo4j ==
 
