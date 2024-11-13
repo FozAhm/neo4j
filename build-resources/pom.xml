@@ -13,6 +13,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spotless.check.skip>true</spotless.check.skip>
     </properties>
 
     <scm>
@@ -64,6 +65,12 @@
                         <phase>none</phase>
                     </execution>
                 </executions>
+            </plugin>
+            <!-- Allow `mvn spotless:*` to be run from the root project -->
+            <plugin>
+                <groupId>com.diffplug.spotless</groupId>
+                <artifactId>spotless-maven-plugin</artifactId>
+                <version>2.43.0</version>
             </plugin>
             <!-- Allow `mvn enforcer:enforce` to be run from the root project -->
             <plugin>
