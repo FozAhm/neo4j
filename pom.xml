@@ -739,7 +739,7 @@
         </executions>
         <configuration>
           <upToDateChecking>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
           </upToDateChecking>
           <java>
             <palantirJavaFormat />
@@ -747,7 +747,6 @@
           <scala>
             <scalafmt>
               <file>scalafmt/scalafmt.conf</file>
-              <version>3.7.3</version> <!-- Make sure this version is 3.7.3 -->
             </scalafmt>
           </scala>
         </configuration>
