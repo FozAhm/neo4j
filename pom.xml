@@ -725,40 +725,6 @@
         <artifactId>maven-failsafe-plugin</artifactId>
       </plugin>
 
-      <!-- Spotless is used for checkstyle and automatic code formatting -->
-      <plugin>
-        <groupId>com.diffplug.spotless</groupId>
-        <artifactId>spotless-maven-plugin</artifactId>
-        <version>2.43.0</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <upToDateChecking>
-            <enabled>true</enabled>
-          </upToDateChecking>
-          <java>
-            <palantirJavaFormat />
-          </java>
-          <scala>
-            <scalafmt>
-              <file>scalafmt/scalafmt.conf</file>
-            </scalafmt>
-          </scala>
-        </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.neo4j.build</groupId>
-            <artifactId>build-resources</artifactId>
-            <version>${project.version}</version>
-          </dependency>
-        </dependencies>
-      </plugin>
-
       <!-- Creates source jar if source exits -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
