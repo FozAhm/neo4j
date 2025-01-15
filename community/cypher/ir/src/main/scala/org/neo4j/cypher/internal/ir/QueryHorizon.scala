@@ -153,9 +153,11 @@ sealed abstract class QueryProjection extends QueryHorizon {
   def projections: Map[String, Expression]
   def queryPagination: QueryPagination
   def keySet: Set[String]
+  def isTerminating: Boolean
   def withSelection(selections: Selections): QueryProjection
   def withAddedProjections(projections: Map[String, Expression]): QueryProjection
   def withPagination(queryPagination: QueryPagination): QueryProjection
+  def withIsTerminating(boolean: Boolean): QueryProjection
 
   override def dependingExpressions: Seq[Expression] = projections.values.toSeq ++ selections.predicates.map(_.expr)
 
@@ -217,13 +219,17 @@ final case class AggregatingQueryProjection(
   groupingExpressions: Map[String, Expression] = Map.empty,
   aggregationExpressions: Map[String, Expression] = Map.empty,
   queryPagination: QueryPagination = QueryPagination.empty,
-  selections: Selections = Selections()
+  selections: Selections = Selections(),
+  isTerminating: Boolean = false
 ) extends QueryProjection {
 
   assert(
     !(groupingExpressions.isEmpty && aggregationExpressions.isEmpty),
     "Everything can't be empty"
   )
+
+  override def withIsTerminating(boolean: Boolean): AggregatingQueryProjection =
+    copy(isTerminating = boolean)
 
   override def projections: Map[String, Expression] = groupingExpressions ++ aggregationExpressions
 
