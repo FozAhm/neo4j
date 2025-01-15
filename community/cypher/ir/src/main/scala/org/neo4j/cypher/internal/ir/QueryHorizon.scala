@@ -193,8 +193,7 @@ object QueryProjection {
 final case class RegularQueryProjection(
   projections: Map[String, Expression] = Map.empty,
   queryPagination: QueryPagination = QueryPagination.empty,
-  selections: Selections = Selections(),
-  isTerminating: Boolean = false
+  selections: Selections = Selections()
 ) extends QueryProjection {
   def keySet: Set[String] = projections.keySet
 
@@ -202,12 +201,8 @@ final case class RegularQueryProjection(
     RegularQueryProjection(
       projections = projections ++ other.projections,
       queryPagination = queryPagination ++ other.queryPagination,
-      selections = selections ++ other.selections,
-      isTerminating = isTerminating && other.isTerminating
+      selections = selections ++ other.selections
     )
-
-  override def withIsTerminating(boolean: Boolean): RegularQueryProjection =
-    copy(isTerminating = boolean)
 
   override def withAddedProjections(projections: Map[String, Expression]): RegularQueryProjection =
     copy(projections = this.projections ++ projections)
@@ -257,16 +252,12 @@ final case class AggregatingQueryProjection(
 final case class DistinctQueryProjection(
   groupingExpressions: Map[String, Expression] = Map.empty,
   queryPagination: QueryPagination = QueryPagination.empty,
-  selections: Selections = Selections(),
-  isTerminating: Boolean = false
+  selections: Selections = Selections()
 ) extends QueryProjection {
 
   def projections: Map[String, Expression] = groupingExpressions
 
   def keySet: Set[String] = groupingExpressions.keySet
-
-  override def withIsTerminating(boolean: Boolean): DistinctQueryProjection =
-    copy(isTerminating = boolean)
 
   override def withAddedProjections(groupingKeys: Map[String, Expression]): DistinctQueryProjection =
     copy(groupingExpressions = this.groupingExpressions ++ groupingKeys)
