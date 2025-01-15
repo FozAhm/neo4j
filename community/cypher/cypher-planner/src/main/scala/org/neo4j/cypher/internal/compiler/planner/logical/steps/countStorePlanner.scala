@@ -46,6 +46,8 @@ case object countStorePlanner {
 
   def apply(query: SinglePlannerQuery, context: LogicalPlanningContext): Option[LogicalPlan] = {
     query.horizon match {
+      // case AggregatingQueryProjection(groupingKeys, aggregatingExpressions, _, selections, _)
+      // case AggregatingQueryProjection(groupingKeys, aggregatingExpressions, queryPagination, selections)
       case AggregatingQueryProjection(groupingKeys, aggregatingExpressions, queryPagination, selections)
         if groupingKeys.isEmpty && query.queryInput.isEmpty && aggregatingExpressions.size == 1 && queryPagination.isEmpty =>
         val (columnName, exp) = aggregatingExpressions.head
