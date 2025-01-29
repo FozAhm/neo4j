@@ -10,7 +10,7 @@ RUN JACOCO_VERSION=0.8.12
 RUN mvn dependency:get -Dartifact=org.jacoco:jacoco-maven-plugin:0.8.12
 
 # Set Java Build Vars 
-ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-arm64
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 ENV MAVEN_OPTS=-Xmx2048m
 
 # Setup Dataset Folders
