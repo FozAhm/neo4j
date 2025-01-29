@@ -1,0 +1,163 @@
+class Actor{
+    Movie[1..10] ACTED_IN1
+}
+
+class Director{
+    Movie[1..10] ACTED_IN2
+}
+
+class Genre.
+
+class Movie{
+    Genre[1..10] IN_GENRE3
+}
+
+class Person{
+    Movie[1..10] ACTED_IN4
+}
+
+class User{
+    Movie[1..10] RATED5
+}
+
+declare genre1, actor1, director1, genre2, genre3, movie1, person1, person2, director2, director3, director4, movie2, genre4, person3, user1, movie3, movie4, person4, director5, user2, actor2, director6, genre5, movie5, movie6, user3, user4, person5, genre6, director7.
+!exists(Actor::new).
+!exists(Director::new).
+!exists(Genre::new).
+!exists(Movie::new).
+!exists(Person::new).
+!exists(User::new).
+Genre(genre1).
+Actor(actor1).
+Director(director1).
+Genre(genre2).
+Genre(genre3).
+Movie(movie1).
+Person(person1).
+Person(person2).
+Director(director2).
+Director(director3).
+Director(director4).
+Movie(movie2).
+Genre(genre4).
+Person(person3).
+User(user1).
+Movie(movie3).
+Movie(movie4).
+Person(person4).
+Director(director5).
+User(user2).
+Actor(actor2).
+Director(director6).
+Genre(genre5).
+Movie(movie5).
+Movie(movie6).
+User(user3).
+User(user4).
+Person(person5).
+Genre(genre6).
+Director(director7).
+default !ACTED_IN1(*, *).
+ACTED_IN1(actor1, movie2).
+ACTED_IN1(actor1, movie3).
+ACTED_IN1(actor1, movie4).
+ACTED_IN1(actor1, movie5).
+ACTED_IN1(actor2, movie1).
+ACTED_IN1(actor2, movie2).
+ACTED_IN1(actor2, movie3).
+ACTED_IN1(actor2, movie4).
+ACTED_IN1(actor2, movie5).
+default !ACTED_IN2(*, *).
+ACTED_IN2(director1, movie1).
+ACTED_IN2(director1, movie2).
+ACTED_IN2(director1, movie3).
+ACTED_IN2(director1, movie4).
+ACTED_IN2(director1, movie6).
+ACTED_IN2(director2, movie1).
+ACTED_IN2(director2, movie3).
+ACTED_IN2(director2, movie4).
+ACTED_IN2(director2, movie6).
+ACTED_IN2(director3, movie1).
+ACTED_IN2(director3, movie3).
+ACTED_IN2(director3, movie4).
+ACTED_IN2(director3, movie5).
+ACTED_IN2(director3, movie6).
+ACTED_IN2(director4, movie1).
+ACTED_IN2(director4, movie2).
+ACTED_IN2(director4, movie3).
+ACTED_IN2(director4, movie5).
+ACTED_IN2(director5, movie1).
+ACTED_IN2(director5, movie2).
+ACTED_IN2(director5, movie3).
+ACTED_IN2(director5, movie4).
+ACTED_IN2(director6, movie1).
+ACTED_IN2(director6, movie2).
+ACTED_IN2(director6, movie3).
+ACTED_IN2(director6, movie4).
+ACTED_IN2(director6, movie5).
+ACTED_IN2(director6, movie6).
+ACTED_IN2(director7, movie6).
+default !IN_GENRE3(*, *).
+IN_GENRE3(movie1, genre1).
+IN_GENRE3(movie1, genre2).
+IN_GENRE3(movie1, genre3).
+IN_GENRE3(movie1, genre4).
+IN_GENRE3(movie1, genre5).
+IN_GENRE3(movie2, genre1).
+IN_GENRE3(movie2, genre2).
+IN_GENRE3(movie2, genre3).
+IN_GENRE3(movie2, genre4).
+IN_GENRE3(movie2, genre5).
+IN_GENRE3(movie3, genre1).
+IN_GENRE3(movie3, genre2).
+IN_GENRE3(movie3, genre3).
+IN_GENRE3(movie3, genre5).
+IN_GENRE3(movie4, genre1).
+IN_GENRE3(movie4, genre2).
+IN_GENRE3(movie4, genre3).
+IN_GENRE3(movie4, genre4).
+IN_GENRE3(movie4, genre5).
+IN_GENRE3(movie5, genre1).
+IN_GENRE3(movie5, genre2).
+IN_GENRE3(movie5, genre5).
+IN_GENRE3(movie6, genre1).
+IN_GENRE3(movie6, genre2).
+IN_GENRE3(movie6, genre3).
+default !ACTED_IN4(*, *).
+ACTED_IN4(person1, movie1).
+ACTED_IN4(person1, movie2).
+ACTED_IN4(person1, movie3).
+ACTED_IN4(person1, movie4).
+ACTED_IN4(person2, movie1).
+ACTED_IN4(person2, movie2).
+ACTED_IN4(person2, movie3).
+ACTED_IN4(person2, movie5).
+ACTED_IN4(person2, movie6).
+ACTED_IN4(person3, movie1).
+ACTED_IN4(person3, movie2).
+ACTED_IN4(person3, movie3).
+ACTED_IN4(person3, movie5).
+ACTED_IN4(person3, movie6).
+ACTED_IN4(person4, movie2).
+ACTED_IN4(person4, movie3).
+ACTED_IN4(person4, movie4).
+ACTED_IN4(person4, movie5).
+ACTED_IN4(person5, movie3).
+ACTED_IN4(person5, movie4).
+ACTED_IN4(person5, movie5).
+default !RATED5(*, *).
+RATED5(user1, movie1).
+RATED5(user1, movie2).
+RATED5(user1, movie3).
+RATED5(user1, movie5).
+RATED5(user1, movie6).
+RATED5(user2, movie1).
+RATED5(user2, movie2).
+RATED5(user2, movie3).
+RATED5(user2, movie4).
+RATED5(user2, movie6).
+RATED5(user3, movie1).
+RATED5(user3, movie2).
+RATED5(user3, movie3).
+RATED5(user4, movie4).
+RATED5(user4, movie5).

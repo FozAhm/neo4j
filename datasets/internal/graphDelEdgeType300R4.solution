@@ -1,0 +1,2855 @@
+class Actor{
+    Movie[1..10] ACTED_IN1
+}
+
+class Director{
+    Movie[1..10] ACTED_IN2
+}
+
+class Genre.
+
+class Movie{
+    Genre[1..10] IN_GENRE3
+}
+
+class Person{
+    Movie[1..10] ACTED_IN4
+}
+
+class User{
+    Movie[1..10] RATED5
+}
+
+declare genre1, user1, genre2, movie1, genre3, genre4, genre5, genre6, director1, user2, movie2, user3, movie3, director2, person1, actor1, actor2, person2, person3, director3, genre7, actor3, user4, director4, movie4, actor4, director5, director6, genre8, director7, user5, actor5, actor6, genre9, movie5, director8, director9, actor7, actor8, user6, genre10, person4, user7, director10, user8, movie6, person5, person6, genre11, actor9, person7, person8, genre12, person9, movie7, genre13, user9, actor10, director11, user10, director12, user11, person10, movie8, actor11, user12, movie9, user13, movie10, actor12, user14, director13, actor13, director14, user15, actor14, movie11, director15, user16, actor15, genre14, user17, genre15, movie12, director16, actor16, person11, user18, user19, person12, person13, actor17, genre16, genre17, director17, person14, actor18, movie13, user20, movie14, person15, director18, actor19, genre18, actor20, genre19, user21, user22, actor21, user23, director19, movie15, movie16, actor22, director20, actor23, movie17, movie18, actor24, director21, actor25, director22, genre20, actor26, user24, person16, user25, user26, director23, director24, genre21, movie19, genre22, director25, user27, user28, director26, genre23, actor27, genre24, actor28, genre25, person17, person18, person19, movie20, actor29, genre26, user29, person20, movie21, movie22, director27, director28, director29, genre27, director30, user30, director31, director32, movie23, user31, genre28, genre29, director33, director34, genre30, movie24, movie25, genre31, movie26, person21, genre32, user32, actor30, genre33, actor31, actor32, movie27, user33, actor33, director35, person22, actor34, person23, person24, person25, genre34, user34, actor35, movie28, movie29, person26, person27, actor36, movie30, user35, director36, person28, person29, director37, actor37, person30, person31, person32, user36, user37, director38, director39, actor38, actor39, genre35, movie31, person33, director40, genre36, genre37, movie32, person34, actor40, movie33, actor41, movie34, genre38, movie35, director41, movie36, actor42, director42, genre39, genre40, director43, movie37, actor43, movie38, movie39, person35, person36, actor44, user38, genre41, director44, genre42, movie40, director45, genre43, user39, movie41, person37, user40, actor45, movie42, movie43, director46, actor46, actor47, genre44, movie44, user41, actor48, actor49, person38, person39, movie45, movie46, director47, person40, person41, director48, actor50, actor51, genre45, actor52, person42, user42, movie47, person43, actor53, actor54, actor55, genre46, user43, person44, movie48, actor56, director49, actor57, genre47, actor58, actor59, movie49, person45, director50, director51, user44, movie50, movie51, movie52, user45, movie53.
+!exists(Actor::new).
+!exists(Director::new).
+!exists(Genre::new).
+!exists(Movie::new).
+!exists(Person::new).
+!exists(User::new).
+Genre(genre1).
+User(user1).
+Genre(genre2).
+Movie(movie1).
+Genre(genre3).
+Genre(genre4).
+Genre(genre5).
+Genre(genre6).
+Director(director1).
+User(user2).
+Movie(movie2).
+User(user3).
+Movie(movie3).
+Director(director2).
+Person(person1).
+Actor(actor1).
+Actor(actor2).
+Person(person2).
+Person(person3).
+Director(director3).
+Genre(genre7).
+Actor(actor3).
+User(user4).
+Director(director4).
+Movie(movie4).
+Actor(actor4).
+Director(director5).
+Director(director6).
+Genre(genre8).
+Director(director7).
+User(user5).
+Actor(actor5).
+Actor(actor6).
+Genre(genre9).
+Movie(movie5).
+Director(director8).
+Director(director9).
+Actor(actor7).
+Actor(actor8).
+User(user6).
+Genre(genre10).
+Person(person4).
+User(user7).
+Director(director10).
+User(user8).
+Movie(movie6).
+Person(person5).
+Person(person6).
+Genre(genre11).
+Actor(actor9).
+Person(person7).
+Person(person8).
+Genre(genre12).
+Person(person9).
+Movie(movie7).
+Genre(genre13).
+User(user9).
+Actor(actor10).
+Director(director11).
+User(user10).
+Director(director12).
+User(user11).
+Person(person10).
+Movie(movie8).
+Actor(actor11).
+User(user12).
+Movie(movie9).
+User(user13).
+Movie(movie10).
+Actor(actor12).
+User(user14).
+Director(director13).
+Actor(actor13).
+Director(director14).
+User(user15).
+Actor(actor14).
+Movie(movie11).
+Director(director15).
+User(user16).
+Actor(actor15).
+Genre(genre14).
+User(user17).
+Genre(genre15).
+Movie(movie12).
+Director(director16).
+Actor(actor16).
+Person(person11).
+User(user18).
+User(user19).
+Person(person12).
+Person(person13).
+Actor(actor17).
+Genre(genre16).
+Genre(genre17).
+Director(director17).
+Person(person14).
+Actor(actor18).
+Movie(movie13).
+User(user20).
+Movie(movie14).
+Person(person15).
+Director(director18).
+Actor(actor19).
+Genre(genre18).
+Actor(actor20).
+Genre(genre19).
+User(user21).
+User(user22).
+Actor(actor21).
+User(user23).
+Director(director19).
+Movie(movie15).
+Movie(movie16).
+Actor(actor22).
+Director(director20).
+Actor(actor23).
+Movie(movie17).
+Movie(movie18).
+Actor(actor24).
+Director(director21).
+Actor(actor25).
+Director(director22).
+Genre(genre20).
+Actor(actor26).
+User(user24).
+Person(person16).
+User(user25).
+User(user26).
+Director(director23).
+Director(director24).
+Genre(genre21).
+Movie(movie19).
+Genre(genre22).
+Director(director25).
+User(user27).
+User(user28).
+Director(director26).
+Genre(genre23).
+Actor(actor27).
+Genre(genre24).
+Actor(actor28).
+Genre(genre25).
+Person(person17).
+Person(person18).
+Person(person19).
+Movie(movie20).
+Actor(actor29).
+Genre(genre26).
+User(user29).
+Person(person20).
+Movie(movie21).
+Movie(movie22).
+Director(director27).
+Director(director28).
+Director(director29).
+Genre(genre27).
+Director(director30).
+User(user30).
+Director(director31).
+Director(director32).
+Movie(movie23).
+User(user31).
+Genre(genre28).
+Genre(genre29).
+Director(director33).
+Director(director34).
+Genre(genre30).
+Movie(movie24).
+Movie(movie25).
+Genre(genre31).
+Movie(movie26).
+Person(person21).
+Genre(genre32).
+User(user32).
+Actor(actor30).
+Genre(genre33).
+Actor(actor31).
+Actor(actor32).
+Movie(movie27).
+User(user33).
+Actor(actor33).
+Director(director35).
+Person(person22).
+Actor(actor34).
+Person(person23).
+Person(person24).
+Person(person25).
+Genre(genre34).
+User(user34).
+Actor(actor35).
+Movie(movie28).
+Movie(movie29).
+Person(person26).
+Person(person27).
+Actor(actor36).
+Movie(movie30).
+User(user35).
+Director(director36).
+Person(person28).
+Person(person29).
+Director(director37).
+Actor(actor37).
+Person(person30).
+Person(person31).
+Person(person32).
+User(user36).
+User(user37).
+Director(director38).
+Director(director39).
+Actor(actor38).
+Actor(actor39).
+Genre(genre35).
+Movie(movie31).
+Person(person33).
+Director(director40).
+Genre(genre36).
+Genre(genre37).
+Movie(movie32).
+Person(person34).
+Actor(actor40).
+Movie(movie33).
+Actor(actor41).
+Movie(movie34).
+Genre(genre38).
+Movie(movie35).
+Director(director41).
+Movie(movie36).
+Actor(actor42).
+Director(director42).
+Genre(genre39).
+Genre(genre40).
+Director(director43).
+Movie(movie37).
+Actor(actor43).
+Movie(movie38).
+Movie(movie39).
+Person(person35).
+Person(person36).
+Actor(actor44).
+User(user38).
+Genre(genre41).
+Director(director44).
+Genre(genre42).
+Movie(movie40).
+Director(director45).
+Genre(genre43).
+User(user39).
+Movie(movie41).
+Person(person37).
+User(user40).
+Actor(actor45).
+Movie(movie42).
+Movie(movie43).
+Director(director46).
+Actor(actor46).
+Actor(actor47).
+Genre(genre44).
+Movie(movie44).
+User(user41).
+Actor(actor48).
+Actor(actor49).
+Person(person38).
+Person(person39).
+Movie(movie45).
+Movie(movie46).
+Director(director47).
+Person(person40).
+Person(person41).
+Director(director48).
+Actor(actor50).
+Actor(actor51).
+Genre(genre45).
+Actor(actor52).
+Person(person42).
+User(user42).
+Movie(movie47).
+Person(person43).
+Actor(actor53).
+Actor(actor54).
+Actor(actor55).
+Genre(genre46).
+User(user43).
+Person(person44).
+Movie(movie48).
+Actor(actor56).
+Director(director49).
+Actor(actor57).
+Genre(genre47).
+Actor(actor58).
+Actor(actor59).
+Movie(movie49).
+Person(person45).
+Director(director50).
+Director(director51).
+User(user44).
+Movie(movie50).
+Movie(movie51).
+Movie(movie52).
+User(user45).
+Movie(movie53).
+default !ACTED_IN1(*, *).
+ACTED_IN1(actor1, movie1).
+ACTED_IN1(actor1, movie2).
+ACTED_IN1(actor1, movie3).
+ACTED_IN1(actor1, movie4).
+ACTED_IN1(actor1, movie5).
+ACTED_IN1(actor1, movie6).
+ACTED_IN1(actor1, movie7).
+ACTED_IN1(actor1, movie8).
+ACTED_IN1(actor1, movie9).
+ACTED_IN1(actor1, movie10).
+ACTED_IN1(actor2, movie1).
+ACTED_IN1(actor2, movie2).
+ACTED_IN1(actor2, movie3).
+ACTED_IN1(actor2, movie4).
+ACTED_IN1(actor2, movie5).
+ACTED_IN1(actor2, movie6).
+ACTED_IN1(actor2, movie7).
+ACTED_IN1(actor2, movie8).
+ACTED_IN1(actor2, movie9).
+ACTED_IN1(actor2, movie10).
+ACTED_IN1(actor3, movie1).
+ACTED_IN1(actor3, movie2).
+ACTED_IN1(actor3, movie3).
+ACTED_IN1(actor3, movie4).
+ACTED_IN1(actor3, movie5).
+ACTED_IN1(actor3, movie6).
+ACTED_IN1(actor3, movie7).
+ACTED_IN1(actor3, movie8).
+ACTED_IN1(actor3, movie9).
+ACTED_IN1(actor3, movie10).
+ACTED_IN1(actor4, movie1).
+ACTED_IN1(actor4, movie2).
+ACTED_IN1(actor4, movie3).
+ACTED_IN1(actor4, movie4).
+ACTED_IN1(actor4, movie5).
+ACTED_IN1(actor4, movie6).
+ACTED_IN1(actor4, movie7).
+ACTED_IN1(actor4, movie8).
+ACTED_IN1(actor4, movie10).
+ACTED_IN1(actor4, movie12).
+ACTED_IN1(actor5, movie1).
+ACTED_IN1(actor5, movie2).
+ACTED_IN1(actor5, movie3).
+ACTED_IN1(actor5, movie4).
+ACTED_IN1(actor5, movie5).
+ACTED_IN1(actor5, movie6).
+ACTED_IN1(actor5, movie7).
+ACTED_IN1(actor5, movie8).
+ACTED_IN1(actor5, movie9).
+ACTED_IN1(actor5, movie10).
+ACTED_IN1(actor6, movie1).
+ACTED_IN1(actor6, movie2).
+ACTED_IN1(actor6, movie3).
+ACTED_IN1(actor6, movie4).
+ACTED_IN1(actor6, movie5).
+ACTED_IN1(actor6, movie6).
+ACTED_IN1(actor6, movie7).
+ACTED_IN1(actor6, movie8).
+ACTED_IN1(actor6, movie9).
+ACTED_IN1(actor6, movie10).
+ACTED_IN1(actor7, movie1).
+ACTED_IN1(actor7, movie2).
+ACTED_IN1(actor7, movie3).
+ACTED_IN1(actor7, movie4).
+ACTED_IN1(actor7, movie5).
+ACTED_IN1(actor7, movie6).
+ACTED_IN1(actor7, movie7).
+ACTED_IN1(actor7, movie8).
+ACTED_IN1(actor7, movie9).
+ACTED_IN1(actor7, movie10).
+ACTED_IN1(actor8, movie1).
+ACTED_IN1(actor8, movie2).
+ACTED_IN1(actor8, movie3).
+ACTED_IN1(actor8, movie4).
+ACTED_IN1(actor8, movie5).
+ACTED_IN1(actor8, movie6).
+ACTED_IN1(actor8, movie7).
+ACTED_IN1(actor8, movie9).
+ACTED_IN1(actor8, movie10).
+ACTED_IN1(actor8, movie12).
+ACTED_IN1(actor9, movie1).
+ACTED_IN1(actor9, movie2).
+ACTED_IN1(actor9, movie3).
+ACTED_IN1(actor9, movie4).
+ACTED_IN1(actor9, movie5).
+ACTED_IN1(actor9, movie6).
+ACTED_IN1(actor9, movie7).
+ACTED_IN1(actor9, movie8).
+ACTED_IN1(actor9, movie9).
+ACTED_IN1(actor9, movie11).
+ACTED_IN1(actor10, movie1).
+ACTED_IN1(actor10, movie2).
+ACTED_IN1(actor10, movie3).
+ACTED_IN1(actor10, movie4).
+ACTED_IN1(actor10, movie5).
+ACTED_IN1(actor10, movie6).
+ACTED_IN1(actor10, movie7).
+ACTED_IN1(actor10, movie9).
+ACTED_IN1(actor10, movie10).
+ACTED_IN1(actor10, movie11).
+ACTED_IN1(actor11, movie1).
+ACTED_IN1(actor11, movie2).
+ACTED_IN1(actor11, movie3).
+ACTED_IN1(actor11, movie4).
+ACTED_IN1(actor11, movie5).
+ACTED_IN1(actor11, movie6).
+ACTED_IN1(actor11, movie7).
+ACTED_IN1(actor11, movie8).
+ACTED_IN1(actor11, movie9).
+ACTED_IN1(actor11, movie10).
+ACTED_IN1(actor12, movie2).
+ACTED_IN1(actor12, movie3).
+ACTED_IN1(actor12, movie4).
+ACTED_IN1(actor12, movie5).
+ACTED_IN1(actor12, movie6).
+ACTED_IN1(actor12, movie7).
+ACTED_IN1(actor12, movie8).
+ACTED_IN1(actor12, movie9).
+ACTED_IN1(actor12, movie10).
+ACTED_IN1(actor12, movie11).
+ACTED_IN1(actor13, movie1).
+ACTED_IN1(actor13, movie2).
+ACTED_IN1(actor13, movie3).
+ACTED_IN1(actor13, movie5).
+ACTED_IN1(actor13, movie6).
+ACTED_IN1(actor13, movie8).
+ACTED_IN1(actor13, movie9).
+ACTED_IN1(actor13, movie10).
+ACTED_IN1(actor13, movie11).
+ACTED_IN1(actor13, movie12).
+ACTED_IN1(actor14, movie1).
+ACTED_IN1(actor14, movie3).
+ACTED_IN1(actor14, movie4).
+ACTED_IN1(actor14, movie5).
+ACTED_IN1(actor14, movie6).
+ACTED_IN1(actor14, movie7).
+ACTED_IN1(actor14, movie8).
+ACTED_IN1(actor14, movie9).
+ACTED_IN1(actor14, movie10).
+ACTED_IN1(actor14, movie11).
+ACTED_IN1(actor15, movie1).
+ACTED_IN1(actor15, movie3).
+ACTED_IN1(actor15, movie4).
+ACTED_IN1(actor15, movie5).
+ACTED_IN1(actor15, movie6).
+ACTED_IN1(actor15, movie7).
+ACTED_IN1(actor15, movie8).
+ACTED_IN1(actor15, movie10).
+ACTED_IN1(actor15, movie11).
+ACTED_IN1(actor15, movie12).
+ACTED_IN1(actor16, movie1).
+ACTED_IN1(actor16, movie3).
+ACTED_IN1(actor16, movie4).
+ACTED_IN1(actor16, movie5).
+ACTED_IN1(actor16, movie6).
+ACTED_IN1(actor16, movie8).
+ACTED_IN1(actor16, movie9).
+ACTED_IN1(actor16, movie10).
+ACTED_IN1(actor16, movie11).
+ACTED_IN1(actor16, movie12).
+ACTED_IN1(actor17, movie2).
+ACTED_IN1(actor17, movie3).
+ACTED_IN1(actor17, movie5).
+ACTED_IN1(actor17, movie6).
+ACTED_IN1(actor17, movie7).
+ACTED_IN1(actor17, movie8).
+ACTED_IN1(actor17, movie9).
+ACTED_IN1(actor17, movie10).
+ACTED_IN1(actor17, movie11).
+ACTED_IN1(actor17, movie12).
+ACTED_IN1(actor18, movie4).
+ACTED_IN1(actor18, movie5).
+ACTED_IN1(actor18, movie6).
+ACTED_IN1(actor18, movie7).
+ACTED_IN1(actor18, movie8).
+ACTED_IN1(actor18, movie10).
+ACTED_IN1(actor18, movie11).
+ACTED_IN1(actor18, movie12).
+ACTED_IN1(actor18, movie13).
+ACTED_IN1(actor18, movie14).
+ACTED_IN1(actor19, movie1).
+ACTED_IN1(actor19, movie3).
+ACTED_IN1(actor19, movie5).
+ACTED_IN1(actor19, movie6).
+ACTED_IN1(actor19, movie7).
+ACTED_IN1(actor19, movie8).
+ACTED_IN1(actor19, movie9).
+ACTED_IN1(actor19, movie10).
+ACTED_IN1(actor19, movie12).
+ACTED_IN1(actor19, movie13).
+ACTED_IN1(actor20, movie2).
+ACTED_IN1(actor20, movie3).
+ACTED_IN1(actor20, movie5).
+ACTED_IN1(actor20, movie7).
+ACTED_IN1(actor20, movie8).
+ACTED_IN1(actor20, movie9).
+ACTED_IN1(actor20, movie10).
+ACTED_IN1(actor20, movie11).
+ACTED_IN1(actor20, movie12).
+ACTED_IN1(actor20, movie13).
+ACTED_IN1(actor21, movie1).
+ACTED_IN1(actor21, movie3).
+ACTED_IN1(actor21, movie4).
+ACTED_IN1(actor21, movie5).
+ACTED_IN1(actor21, movie7).
+ACTED_IN1(actor21, movie9).
+ACTED_IN1(actor21, movie10).
+ACTED_IN1(actor21, movie11).
+ACTED_IN1(actor21, movie12).
+ACTED_IN1(actor21, movie14).
+ACTED_IN1(actor22, movie4).
+ACTED_IN1(actor22, movie5).
+ACTED_IN1(actor22, movie6).
+ACTED_IN1(actor22, movie8).
+ACTED_IN1(actor22, movie11).
+ACTED_IN1(actor22, movie12).
+ACTED_IN1(actor22, movie13).
+ACTED_IN1(actor22, movie14).
+ACTED_IN1(actor22, movie15).
+ACTED_IN1(actor22, movie16).
+ACTED_IN1(actor23, movie1).
+ACTED_IN1(actor23, movie2).
+ACTED_IN1(actor23, movie3).
+ACTED_IN1(actor23, movie5).
+ACTED_IN1(actor23, movie7).
+ACTED_IN1(actor23, movie9).
+ACTED_IN1(actor23, movie10).
+ACTED_IN1(actor23, movie14).
+ACTED_IN1(actor23, movie16).
+ACTED_IN1(actor23, movie17).
+ACTED_IN1(actor24, movie3).
+ACTED_IN1(actor24, movie5).
+ACTED_IN1(actor24, movie6).
+ACTED_IN1(actor24, movie7).
+ACTED_IN1(actor24, movie9).
+ACTED_IN1(actor24, movie10).
+ACTED_IN1(actor24, movie12).
+ACTED_IN1(actor24, movie13).
+ACTED_IN1(actor24, movie16).
+ACTED_IN1(actor24, movie18).
+ACTED_IN1(actor25, movie2).
+ACTED_IN1(actor25, movie4).
+ACTED_IN1(actor25, movie5).
+ACTED_IN1(actor25, movie6).
+ACTED_IN1(actor25, movie7).
+ACTED_IN1(actor25, movie9).
+ACTED_IN1(actor25, movie11).
+ACTED_IN1(actor25, movie13).
+ACTED_IN1(actor25, movie14).
+ACTED_IN1(actor25, movie18).
+ACTED_IN1(actor26, movie1).
+ACTED_IN1(actor26, movie2).
+ACTED_IN1(actor26, movie5).
+ACTED_IN1(actor26, movie9).
+ACTED_IN1(actor26, movie10).
+ACTED_IN1(actor26, movie11).
+ACTED_IN1(actor26, movie14).
+ACTED_IN1(actor26, movie15).
+ACTED_IN1(actor26, movie17).
+ACTED_IN1(actor26, movie18).
+ACTED_IN1(actor27, movie3).
+ACTED_IN1(actor27, movie5).
+ACTED_IN1(actor27, movie6).
+ACTED_IN1(actor27, movie7).
+ACTED_IN1(actor27, movie8).
+ACTED_IN1(actor27, movie10).
+ACTED_IN1(actor27, movie11).
+ACTED_IN1(actor27, movie15).
+ACTED_IN1(actor27, movie17).
+ACTED_IN1(actor27, movie18).
+ACTED_IN1(actor28, movie6).
+ACTED_IN1(actor28, movie8).
+ACTED_IN1(actor28, movie9).
+ACTED_IN1(actor28, movie10).
+ACTED_IN1(actor28, movie12).
+ACTED_IN1(actor28, movie13).
+ACTED_IN1(actor28, movie14).
+ACTED_IN1(actor28, movie17).
+ACTED_IN1(actor28, movie18).
+ACTED_IN1(actor28, movie19).
+ACTED_IN1(actor29, movie2).
+ACTED_IN1(actor29, movie3).
+ACTED_IN1(actor29, movie5).
+ACTED_IN1(actor29, movie7).
+ACTED_IN1(actor29, movie8).
+ACTED_IN1(actor29, movie9).
+ACTED_IN1(actor29, movie13).
+ACTED_IN1(actor29, movie14).
+ACTED_IN1(actor29, movie16).
+ACTED_IN1(actor29, movie17).
+ACTED_IN1(actor30, movie3).
+ACTED_IN1(actor30, movie4).
+ACTED_IN1(actor30, movie9).
+ACTED_IN1(actor30, movie11).
+ACTED_IN1(actor30, movie12).
+ACTED_IN1(actor30, movie14).
+ACTED_IN1(actor30, movie15).
+ACTED_IN1(actor30, movie19).
+ACTED_IN1(actor30, movie23).
+ACTED_IN1(actor30, movie24).
+ACTED_IN1(actor31, movie1).
+ACTED_IN1(actor31, movie4).
+ACTED_IN1(actor31, movie5).
+ACTED_IN1(actor31, movie6).
+ACTED_IN1(actor31, movie7).
+ACTED_IN1(actor31, movie10).
+ACTED_IN1(actor31, movie11).
+ACTED_IN1(actor31, movie12).
+ACTED_IN1(actor31, movie16).
+ACTED_IN1(actor31, movie19).
+ACTED_IN1(actor32, movie2).
+ACTED_IN1(actor32, movie5).
+ACTED_IN1(actor32, movie7).
+ACTED_IN1(actor32, movie11).
+ACTED_IN1(actor32, movie13).
+ACTED_IN1(actor32, movie18).
+ACTED_IN1(actor32, movie20).
+ACTED_IN1(actor32, movie21).
+ACTED_IN1(actor32, movie23).
+ACTED_IN1(actor32, movie25).
+ACTED_IN1(actor33, movie4).
+ACTED_IN1(actor33, movie5).
+ACTED_IN1(actor33, movie10).
+ACTED_IN1(actor33, movie11).
+ACTED_IN1(actor33, movie14).
+ACTED_IN1(actor33, movie16).
+ACTED_IN1(actor33, movie20).
+ACTED_IN1(actor33, movie21).
+ACTED_IN1(actor33, movie22).
+ACTED_IN1(actor33, movie23).
+ACTED_IN1(actor34, movie1).
+ACTED_IN1(actor34, movie3).
+ACTED_IN1(actor34, movie6).
+ACTED_IN1(actor34, movie8).
+ACTED_IN1(actor34, movie11).
+ACTED_IN1(actor34, movie13).
+ACTED_IN1(actor34, movie17).
+ACTED_IN1(actor34, movie22).
+ACTED_IN1(actor34, movie23).
+ACTED_IN1(actor34, movie25).
+ACTED_IN1(actor35, movie1).
+ACTED_IN1(actor35, movie3).
+ACTED_IN1(actor35, movie7).
+ACTED_IN1(actor35, movie10).
+ACTED_IN1(actor35, movie13).
+ACTED_IN1(actor35, movie14).
+ACTED_IN1(actor35, movie15).
+ACTED_IN1(actor35, movie20).
+ACTED_IN1(actor35, movie23).
+ACTED_IN1(actor35, movie24).
+ACTED_IN1(actor36, movie2).
+ACTED_IN1(actor36, movie5).
+ACTED_IN1(actor36, movie10).
+ACTED_IN1(actor36, movie12).
+ACTED_IN1(actor36, movie13).
+ACTED_IN1(actor36, movie18).
+ACTED_IN1(actor36, movie20).
+ACTED_IN1(actor36, movie21).
+ACTED_IN1(actor36, movie26).
+ACTED_IN1(actor36, movie29).
+ACTED_IN1(actor37, movie2).
+ACTED_IN1(actor37, movie4).
+ACTED_IN1(actor37, movie6).
+ACTED_IN1(actor37, movie7).
+ACTED_IN1(actor37, movie9).
+ACTED_IN1(actor37, movie10).
+ACTED_IN1(actor37, movie16).
+ACTED_IN1(actor37, movie18).
+ACTED_IN1(actor37, movie23).
+ACTED_IN1(actor37, movie27).
+ACTED_IN1(actor38, movie2).
+ACTED_IN1(actor38, movie7).
+ACTED_IN1(actor38, movie10).
+ACTED_IN1(actor38, movie11).
+ACTED_IN1(actor38, movie18).
+ACTED_IN1(actor38, movie21).
+ACTED_IN1(actor38, movie22).
+ACTED_IN1(actor38, movie23).
+ACTED_IN1(actor38, movie27).
+ACTED_IN1(actor38, movie29).
+ACTED_IN1(actor39, movie3).
+ACTED_IN1(actor39, movie4).
+ACTED_IN1(actor39, movie5).
+ACTED_IN1(actor39, movie7).
+ACTED_IN1(actor39, movie8).
+ACTED_IN1(actor39, movie14).
+ACTED_IN1(actor39, movie19).
+ACTED_IN1(actor39, movie22).
+ACTED_IN1(actor39, movie24).
+ACTED_IN1(actor39, movie29).
+ACTED_IN1(actor40, movie2).
+ACTED_IN1(actor40, movie3).
+ACTED_IN1(actor40, movie6).
+ACTED_IN1(actor40, movie7).
+ACTED_IN1(actor40, movie8).
+ACTED_IN1(actor40, movie11).
+ACTED_IN1(actor40, movie25).
+ACTED_IN1(actor40, movie26).
+ACTED_IN1(actor40, movie27).
+ACTED_IN1(actor40, movie32).
+ACTED_IN1(actor41, movie3).
+ACTED_IN1(actor41, movie8).
+ACTED_IN1(actor41, movie9).
+ACTED_IN1(actor41, movie10).
+ACTED_IN1(actor41, movie13).
+ACTED_IN1(actor41, movie15).
+ACTED_IN1(actor41, movie17).
+ACTED_IN1(actor41, movie24).
+ACTED_IN1(actor41, movie26).
+ACTED_IN1(actor41, movie32).
+ACTED_IN1(actor42, movie2).
+ACTED_IN1(actor42, movie10).
+ACTED_IN1(actor42, movie14).
+ACTED_IN1(actor42, movie16).
+ACTED_IN1(actor42, movie21).
+ACTED_IN1(actor42, movie22).
+ACTED_IN1(actor42, movie23).
+ACTED_IN1(actor42, movie24).
+ACTED_IN1(actor42, movie26).
+ACTED_IN1(actor42, movie30).
+ACTED_IN1(actor43, movie9).
+ACTED_IN1(actor43, movie12).
+ACTED_IN1(actor43, movie13).
+ACTED_IN1(actor43, movie14).
+ACTED_IN1(actor43, movie20).
+ACTED_IN1(actor43, movie23).
+ACTED_IN1(actor43, movie27).
+ACTED_IN1(actor43, movie28).
+ACTED_IN1(actor43, movie34).
+ACTED_IN1(actor43, movie37).
+ACTED_IN1(actor44, movie2).
+ACTED_IN1(actor44, movie4).
+ACTED_IN1(actor44, movie9).
+ACTED_IN1(actor44, movie10).
+ACTED_IN1(actor44, movie11).
+ACTED_IN1(actor44, movie15).
+ACTED_IN1(actor44, movie23).
+ACTED_IN1(actor44, movie26).
+ACTED_IN1(actor44, movie30).
+ACTED_IN1(actor44, movie35).
+ACTED_IN1(actor45, movie4).
+ACTED_IN1(actor45, movie7).
+ACTED_IN1(actor45, movie12).
+ACTED_IN1(actor45, movie15).
+ACTED_IN1(actor45, movie16).
+ACTED_IN1(actor45, movie18).
+ACTED_IN1(actor45, movie21).
+ACTED_IN1(actor45, movie24).
+ACTED_IN1(actor45, movie29).
+ACTED_IN1(actor45, movie36).
+ACTED_IN1(actor46, movie2).
+ACTED_IN1(actor46, movie6).
+ACTED_IN1(actor46, movie10).
+ACTED_IN1(actor46, movie11).
+ACTED_IN1(actor46, movie21).
+ACTED_IN1(actor46, movie25).
+ACTED_IN1(actor46, movie28).
+ACTED_IN1(actor46, movie37).
+ACTED_IN1(actor46, movie39).
+ACTED_IN1(actor46, movie41).
+ACTED_IN1(actor47, movie4).
+ACTED_IN1(actor47, movie8).
+ACTED_IN1(actor47, movie10).
+ACTED_IN1(actor47, movie15).
+ACTED_IN1(actor47, movie19).
+ACTED_IN1(actor47, movie20).
+ACTED_IN1(actor47, movie23).
+ACTED_IN1(actor47, movie24).
+ACTED_IN1(actor47, movie30).
+ACTED_IN1(actor47, movie40).
+ACTED_IN1(actor48, movie6).
+ACTED_IN1(actor48, movie8).
+ACTED_IN1(actor48, movie9).
+ACTED_IN1(actor48, movie11).
+ACTED_IN1(actor48, movie17).
+ACTED_IN1(actor48, movie19).
+ACTED_IN1(actor48, movie21).
+ACTED_IN1(actor48, movie25).
+ACTED_IN1(actor48, movie38).
+ACTED_IN1(actor48, movie40).
+ACTED_IN1(actor49, movie5).
+ACTED_IN1(actor49, movie11).
+ACTED_IN1(actor49, movie13).
+ACTED_IN1(actor49, movie14).
+ACTED_IN1(actor49, movie15).
+ACTED_IN1(actor49, movie19).
+ACTED_IN1(actor49, movie20).
+ACTED_IN1(actor49, movie34).
+ACTED_IN1(actor49, movie40).
+ACTED_IN1(actor49, movie44).
+ACTED_IN1(actor50, movie3).
+ACTED_IN1(actor50, movie6).
+ACTED_IN1(actor50, movie14).
+ACTED_IN1(actor50, movie15).
+ACTED_IN1(actor50, movie17).
+ACTED_IN1(actor50, movie19).
+ACTED_IN1(actor50, movie21).
+ACTED_IN1(actor50, movie33).
+ACTED_IN1(actor50, movie34).
+ACTED_IN1(actor50, movie35).
+ACTED_IN1(actor51, movie3).
+ACTED_IN1(actor51, movie4).
+ACTED_IN1(actor51, movie12).
+ACTED_IN1(actor51, movie15).
+ACTED_IN1(actor51, movie19).
+ACTED_IN1(actor51, movie26).
+ACTED_IN1(actor51, movie31).
+ACTED_IN1(actor51, movie32).
+ACTED_IN1(actor51, movie33).
+ACTED_IN1(actor51, movie40).
+ACTED_IN1(actor52, movie1).
+ACTED_IN1(actor52, movie7).
+ACTED_IN1(actor52, movie14).
+ACTED_IN1(actor52, movie19).
+ACTED_IN1(actor52, movie20).
+ACTED_IN1(actor52, movie25).
+ACTED_IN1(actor52, movie26).
+ACTED_IN1(actor52, movie38).
+ACTED_IN1(actor52, movie43).
+ACTED_IN1(actor52, movie46).
+ACTED_IN1(actor53, movie9).
+ACTED_IN1(actor53, movie14).
+ACTED_IN1(actor53, movie15).
+ACTED_IN1(actor53, movie21).
+ACTED_IN1(actor53, movie33).
+ACTED_IN1(actor53, movie34).
+ACTED_IN1(actor53, movie36).
+ACTED_IN1(actor53, movie41).
+ACTED_IN1(actor53, movie44).
+ACTED_IN1(actor53, movie45).
+ACTED_IN1(actor54, movie3).
+ACTED_IN1(actor54, movie6).
+ACTED_IN1(actor54, movie16).
+ACTED_IN1(actor54, movie17).
+ACTED_IN1(actor54, movie24).
+ACTED_IN1(actor54, movie32).
+ACTED_IN1(actor54, movie33).
+ACTED_IN1(actor54, movie36).
+ACTED_IN1(actor54, movie38).
+ACTED_IN1(actor54, movie39).
+ACTED_IN1(actor55, movie5).
+ACTED_IN1(actor55, movie10).
+ACTED_IN1(actor55, movie11).
+ACTED_IN1(actor55, movie15).
+ACTED_IN1(actor55, movie27).
+ACTED_IN1(actor55, movie29).
+ACTED_IN1(actor55, movie30).
+ACTED_IN1(actor55, movie39).
+ACTED_IN1(actor55, movie41).
+ACTED_IN1(actor55, movie42).
+ACTED_IN1(actor56, movie7).
+ACTED_IN1(actor56, movie8).
+ACTED_IN1(actor56, movie9).
+ACTED_IN1(actor56, movie11).
+ACTED_IN1(actor56, movie14).
+ACTED_IN1(actor56, movie20).
+ACTED_IN1(actor56, movie27).
+ACTED_IN1(actor56, movie31).
+ACTED_IN1(actor56, movie40).
+ACTED_IN1(actor56, movie44).
+ACTED_IN1(actor57, movie4).
+ACTED_IN1(actor57, movie7).
+ACTED_IN1(actor57, movie9).
+ACTED_IN1(actor57, movie12).
+ACTED_IN1(actor57, movie13).
+ACTED_IN1(actor57, movie14).
+ACTED_IN1(actor57, movie18).
+ACTED_IN1(actor57, movie20).
+ACTED_IN1(actor57, movie26).
+ACTED_IN1(actor57, movie42).
+ACTED_IN1(actor58, movie18).
+ACTED_IN1(actor58, movie20).
+ACTED_IN1(actor58, movie22).
+ACTED_IN1(actor58, movie24).
+ACTED_IN1(actor58, movie26).
+ACTED_IN1(actor58, movie28).
+ACTED_IN1(actor58, movie29).
+ACTED_IN1(actor58, movie36).
+ACTED_IN1(actor58, movie37).
+ACTED_IN1(actor58, movie41).
+ACTED_IN1(actor59, movie4).
+ACTED_IN1(actor59, movie7).
+ACTED_IN1(actor59, movie9).
+ACTED_IN1(actor59, movie10).
+ACTED_IN1(actor59, movie16).
+ACTED_IN1(actor59, movie29).
+ACTED_IN1(actor59, movie34).
+ACTED_IN1(actor59, movie35).
+ACTED_IN1(actor59, movie41).
+ACTED_IN1(actor59, movie48).
+default !ACTED_IN2(*, *).
+ACTED_IN2(director1, movie1).
+ACTED_IN2(director1, movie2).
+ACTED_IN2(director1, movie3).
+ACTED_IN2(director1, movie4).
+ACTED_IN2(director1, movie5).
+ACTED_IN2(director1, movie6).
+ACTED_IN2(director1, movie7).
+ACTED_IN2(director1, movie8).
+ACTED_IN2(director1, movie9).
+ACTED_IN2(director1, movie10).
+ACTED_IN2(director2, movie1).
+ACTED_IN2(director2, movie2).
+ACTED_IN2(director2, movie3).
+ACTED_IN2(director2, movie4).
+ACTED_IN2(director2, movie5).
+ACTED_IN2(director2, movie6).
+ACTED_IN2(director2, movie7).
+ACTED_IN2(director2, movie8).
+ACTED_IN2(director2, movie10).
+ACTED_IN2(director2, movie11).
+ACTED_IN2(director3, movie1).
+ACTED_IN2(director3, movie2).
+ACTED_IN2(director3, movie3).
+ACTED_IN2(director3, movie4).
+ACTED_IN2(director3, movie5).
+ACTED_IN2(director3, movie6).
+ACTED_IN2(director3, movie7).
+ACTED_IN2(director3, movie8).
+ACTED_IN2(director3, movie10).
+ACTED_IN2(director3, movie11).
+ACTED_IN2(director4, movie1).
+ACTED_IN2(director4, movie2).
+ACTED_IN2(director4, movie3).
+ACTED_IN2(director4, movie4).
+ACTED_IN2(director4, movie5).
+ACTED_IN2(director4, movie6).
+ACTED_IN2(director4, movie7).
+ACTED_IN2(director4, movie9).
+ACTED_IN2(director4, movie10).
+ACTED_IN2(director4, movie12).
+ACTED_IN2(director5, movie1).
+ACTED_IN2(director5, movie2).
+ACTED_IN2(director5, movie3).
+ACTED_IN2(director5, movie4).
+ACTED_IN2(director5, movie5).
+ACTED_IN2(director5, movie6).
+ACTED_IN2(director5, movie7).
+ACTED_IN2(director5, movie8).
+ACTED_IN2(director5, movie9).
+ACTED_IN2(director5, movie11).
+ACTED_IN2(director6, movie1).
+ACTED_IN2(director6, movie2).
+ACTED_IN2(director6, movie3).
+ACTED_IN2(director6, movie4).
+ACTED_IN2(director6, movie5).
+ACTED_IN2(director6, movie6).
+ACTED_IN2(director6, movie7).
+ACTED_IN2(director6, movie8).
+ACTED_IN2(director6, movie9).
+ACTED_IN2(director6, movie10).
+ACTED_IN2(director7, movie1).
+ACTED_IN2(director7, movie2).
+ACTED_IN2(director7, movie3).
+ACTED_IN2(director7, movie4).
+ACTED_IN2(director7, movie5).
+ACTED_IN2(director7, movie6).
+ACTED_IN2(director7, movie7).
+ACTED_IN2(director7, movie8).
+ACTED_IN2(director7, movie9).
+ACTED_IN2(director7, movie10).
+ACTED_IN2(director8, movie1).
+ACTED_IN2(director8, movie2).
+ACTED_IN2(director8, movie3).
+ACTED_IN2(director8, movie4).
+ACTED_IN2(director8, movie5).
+ACTED_IN2(director8, movie6).
+ACTED_IN2(director8, movie7).
+ACTED_IN2(director8, movie8).
+ACTED_IN2(director8, movie9).
+ACTED_IN2(director8, movie11).
+ACTED_IN2(director9, movie1).
+ACTED_IN2(director9, movie2).
+ACTED_IN2(director9, movie3).
+ACTED_IN2(director9, movie5).
+ACTED_IN2(director9, movie6).
+ACTED_IN2(director9, movie7).
+ACTED_IN2(director9, movie8).
+ACTED_IN2(director9, movie9).
+ACTED_IN2(director9, movie10).
+ACTED_IN2(director9, movie11).
+ACTED_IN2(director10, movie1).
+ACTED_IN2(director10, movie2).
+ACTED_IN2(director10, movie3).
+ACTED_IN2(director10, movie4).
+ACTED_IN2(director10, movie5).
+ACTED_IN2(director10, movie6).
+ACTED_IN2(director10, movie7).
+ACTED_IN2(director10, movie8).
+ACTED_IN2(director10, movie9).
+ACTED_IN2(director10, movie10).
+ACTED_IN2(director11, movie1).
+ACTED_IN2(director11, movie2).
+ACTED_IN2(director11, movie4).
+ACTED_IN2(director11, movie5).
+ACTED_IN2(director11, movie6).
+ACTED_IN2(director11, movie7).
+ACTED_IN2(director11, movie8).
+ACTED_IN2(director11, movie9).
+ACTED_IN2(director11, movie10).
+ACTED_IN2(director11, movie11).
+ACTED_IN2(director12, movie1).
+ACTED_IN2(director12, movie2).
+ACTED_IN2(director12, movie3).
+ACTED_IN2(director12, movie4).
+ACTED_IN2(director12, movie5).
+ACTED_IN2(director12, movie6).
+ACTED_IN2(director12, movie7).
+ACTED_IN2(director12, movie9).
+ACTED_IN2(director12, movie10).
+ACTED_IN2(director12, movie12).
+ACTED_IN2(director13, movie1).
+ACTED_IN2(director13, movie2).
+ACTED_IN2(director13, movie3).
+ACTED_IN2(director13, movie4).
+ACTED_IN2(director13, movie6).
+ACTED_IN2(director13, movie7).
+ACTED_IN2(director13, movie8).
+ACTED_IN2(director13, movie9).
+ACTED_IN2(director13, movie10).
+ACTED_IN2(director13, movie11).
+ACTED_IN2(director14, movie1).
+ACTED_IN2(director14, movie2).
+ACTED_IN2(director14, movie3).
+ACTED_IN2(director14, movie4).
+ACTED_IN2(director14, movie5).
+ACTED_IN2(director14, movie6).
+ACTED_IN2(director14, movie7).
+ACTED_IN2(director14, movie8).
+ACTED_IN2(director14, movie10).
+ACTED_IN2(director14, movie11).
+ACTED_IN2(director15, movie1).
+ACTED_IN2(director15, movie2).
+ACTED_IN2(director15, movie3).
+ACTED_IN2(director15, movie4).
+ACTED_IN2(director15, movie5).
+ACTED_IN2(director15, movie6).
+ACTED_IN2(director15, movie7).
+ACTED_IN2(director15, movie9).
+ACTED_IN2(director15, movie10).
+ACTED_IN2(director15, movie11).
+ACTED_IN2(director16, movie1).
+ACTED_IN2(director16, movie2).
+ACTED_IN2(director16, movie3).
+ACTED_IN2(director16, movie5).
+ACTED_IN2(director16, movie6).
+ACTED_IN2(director16, movie7).
+ACTED_IN2(director16, movie9).
+ACTED_IN2(director16, movie10).
+ACTED_IN2(director16, movie11).
+ACTED_IN2(director16, movie12).
+ACTED_IN2(director17, movie2).
+ACTED_IN2(director17, movie3).
+ACTED_IN2(director17, movie4).
+ACTED_IN2(director17, movie5).
+ACTED_IN2(director17, movie6).
+ACTED_IN2(director17, movie8).
+ACTED_IN2(director17, movie9).
+ACTED_IN2(director17, movie10).
+ACTED_IN2(director17, movie12).
+ACTED_IN2(director17, movie13).
+ACTED_IN2(director18, movie1).
+ACTED_IN2(director18, movie2).
+ACTED_IN2(director18, movie4).
+ACTED_IN2(director18, movie5).
+ACTED_IN2(director18, movie6).
+ACTED_IN2(director18, movie7).
+ACTED_IN2(director18, movie9).
+ACTED_IN2(director18, movie10).
+ACTED_IN2(director18, movie13).
+ACTED_IN2(director18, movie14).
+ACTED_IN2(director19, movie2).
+ACTED_IN2(director19, movie4).
+ACTED_IN2(director19, movie5).
+ACTED_IN2(director19, movie6).
+ACTED_IN2(director19, movie8).
+ACTED_IN2(director19, movie9).
+ACTED_IN2(director19, movie11).
+ACTED_IN2(director19, movie13).
+ACTED_IN2(director19, movie14).
+ACTED_IN2(director19, movie15).
+ACTED_IN2(director20, movie2).
+ACTED_IN2(director20, movie3).
+ACTED_IN2(director20, movie4).
+ACTED_IN2(director20, movie5).
+ACTED_IN2(director20, movie6).
+ACTED_IN2(director20, movie9).
+ACTED_IN2(director20, movie12).
+ACTED_IN2(director20, movie14).
+ACTED_IN2(director20, movie15).
+ACTED_IN2(director20, movie16).
+ACTED_IN2(director21, movie1).
+ACTED_IN2(director21, movie3).
+ACTED_IN2(director21, movie4).
+ACTED_IN2(director21, movie6).
+ACTED_IN2(director21, movie8).
+ACTED_IN2(director21, movie10).
+ACTED_IN2(director21, movie12).
+ACTED_IN2(director21, movie14).
+ACTED_IN2(director21, movie15).
+ACTED_IN2(director21, movie17).
+ACTED_IN2(director22, movie4).
+ACTED_IN2(director22, movie5).
+ACTED_IN2(director22, movie6).
+ACTED_IN2(director22, movie7).
+ACTED_IN2(director22, movie11).
+ACTED_IN2(director22, movie13).
+ACTED_IN2(director22, movie14).
+ACTED_IN2(director22, movie15).
+ACTED_IN2(director22, movie16).
+ACTED_IN2(director22, movie17).
+ACTED_IN2(director23, movie1).
+ACTED_IN2(director23, movie2).
+ACTED_IN2(director23, movie3).
+ACTED_IN2(director23, movie5).
+ACTED_IN2(director23, movie11).
+ACTED_IN2(director23, movie12).
+ACTED_IN2(director23, movie13).
+ACTED_IN2(director23, movie14).
+ACTED_IN2(director23, movie15).
+ACTED_IN2(director23, movie17).
+ACTED_IN2(director24, movie2).
+ACTED_IN2(director24, movie3).
+ACTED_IN2(director24, movie5).
+ACTED_IN2(director24, movie6).
+ACTED_IN2(director24, movie9).
+ACTED_IN2(director24, movie10).
+ACTED_IN2(director24, movie13).
+ACTED_IN2(director24, movie14).
+ACTED_IN2(director24, movie16).
+ACTED_IN2(director24, movie17).
+ACTED_IN2(director25, movie2).
+ACTED_IN2(director25, movie4).
+ACTED_IN2(director25, movie8).
+ACTED_IN2(director25, movie9).
+ACTED_IN2(director25, movie10).
+ACTED_IN2(director25, movie12).
+ACTED_IN2(director25, movie15).
+ACTED_IN2(director25, movie16).
+ACTED_IN2(director25, movie17).
+ACTED_IN2(director25, movie19).
+ACTED_IN2(director26, movie1).
+ACTED_IN2(director26, movie3).
+ACTED_IN2(director26, movie5).
+ACTED_IN2(director26, movie6).
+ACTED_IN2(director26, movie7).
+ACTED_IN2(director26, movie13).
+ACTED_IN2(director26, movie14).
+ACTED_IN2(director26, movie15).
+ACTED_IN2(director26, movie16).
+ACTED_IN2(director26, movie17).
+ACTED_IN2(director27, movie1).
+ACTED_IN2(director27, movie3).
+ACTED_IN2(director27, movie4).
+ACTED_IN2(director27, movie6).
+ACTED_IN2(director27, movie7).
+ACTED_IN2(director27, movie8).
+ACTED_IN2(director27, movie10).
+ACTED_IN2(director27, movie12).
+ACTED_IN2(director27, movie14).
+ACTED_IN2(director27, movie21).
+ACTED_IN2(director28, movie1).
+ACTED_IN2(director28, movie5).
+ACTED_IN2(director28, movie8).
+ACTED_IN2(director28, movie10).
+ACTED_IN2(director28, movie11).
+ACTED_IN2(director28, movie12).
+ACTED_IN2(director28, movie14).
+ACTED_IN2(director28, movie17).
+ACTED_IN2(director28, movie19).
+ACTED_IN2(director28, movie21).
+ACTED_IN2(director29, movie1).
+ACTED_IN2(director29, movie4).
+ACTED_IN2(director29, movie5).
+ACTED_IN2(director29, movie8).
+ACTED_IN2(director29, movie15).
+ACTED_IN2(director29, movie17).
+ACTED_IN2(director29, movie18).
+ACTED_IN2(director29, movie19).
+ACTED_IN2(director29, movie20).
+ACTED_IN2(director29, movie21).
+ACTED_IN2(director30, movie1).
+ACTED_IN2(director30, movie2).
+ACTED_IN2(director30, movie4).
+ACTED_IN2(director30, movie5).
+ACTED_IN2(director30, movie6).
+ACTED_IN2(director30, movie7).
+ACTED_IN2(director30, movie10).
+ACTED_IN2(director30, movie13).
+ACTED_IN2(director30, movie17).
+ACTED_IN2(director30, movie19).
+ACTED_IN2(director31, movie6).
+ACTED_IN2(director31, movie11).
+ACTED_IN2(director31, movie12).
+ACTED_IN2(director31, movie13).
+ACTED_IN2(director31, movie14).
+ACTED_IN2(director31, movie15).
+ACTED_IN2(director31, movie19).
+ACTED_IN2(director31, movie20).
+ACTED_IN2(director31, movie21).
+ACTED_IN2(director31, movie22).
+ACTED_IN2(director32, movie2).
+ACTED_IN2(director32, movie3).
+ACTED_IN2(director32, movie6).
+ACTED_IN2(director32, movie8).
+ACTED_IN2(director32, movie12).
+ACTED_IN2(director32, movie17).
+ACTED_IN2(director32, movie19).
+ACTED_IN2(director32, movie20).
+ACTED_IN2(director32, movie21).
+ACTED_IN2(director32, movie22).
+ACTED_IN2(director33, movie3).
+ACTED_IN2(director33, movie7).
+ACTED_IN2(director33, movie9).
+ACTED_IN2(director33, movie10).
+ACTED_IN2(director33, movie11).
+ACTED_IN2(director33, movie13).
+ACTED_IN2(director33, movie15).
+ACTED_IN2(director33, movie17).
+ACTED_IN2(director33, movie19).
+ACTED_IN2(director33, movie20).
+ACTED_IN2(director34, movie2).
+ACTED_IN2(director34, movie4).
+ACTED_IN2(director34, movie5).
+ACTED_IN2(director34, movie8).
+ACTED_IN2(director34, movie9).
+ACTED_IN2(director34, movie15).
+ACTED_IN2(director34, movie17).
+ACTED_IN2(director34, movie18).
+ACTED_IN2(director34, movie20).
+ACTED_IN2(director34, movie22).
+ACTED_IN2(director35, movie4).
+ACTED_IN2(director35, movie7).
+ACTED_IN2(director35, movie12).
+ACTED_IN2(director35, movie14).
+ACTED_IN2(director35, movie18).
+ACTED_IN2(director35, movie19).
+ACTED_IN2(director35, movie20).
+ACTED_IN2(director35, movie21).
+ACTED_IN2(director35, movie22).
+ACTED_IN2(director35, movie24).
+ACTED_IN2(director36, movie1).
+ACTED_IN2(director36, movie3).
+ACTED_IN2(director36, movie4).
+ACTED_IN2(director36, movie6).
+ACTED_IN2(director36, movie7).
+ACTED_IN2(director36, movie15).
+ACTED_IN2(director36, movie16).
+ACTED_IN2(director36, movie22).
+ACTED_IN2(director36, movie27).
+ACTED_IN2(director36, movie29).
+ACTED_IN2(director37, movie2).
+ACTED_IN2(director37, movie6).
+ACTED_IN2(director37, movie11).
+ACTED_IN2(director37, movie13).
+ACTED_IN2(director37, movie14).
+ACTED_IN2(director37, movie23).
+ACTED_IN2(director37, movie25).
+ACTED_IN2(director37, movie27).
+ACTED_IN2(director37, movie28).
+ACTED_IN2(director37, movie30).
+ACTED_IN2(director38, movie1).
+ACTED_IN2(director38, movie3).
+ACTED_IN2(director38, movie7).
+ACTED_IN2(director38, movie9).
+ACTED_IN2(director38, movie10).
+ACTED_IN2(director38, movie12).
+ACTED_IN2(director38, movie18).
+ACTED_IN2(director38, movie21).
+ACTED_IN2(director38, movie24).
+ACTED_IN2(director38, movie29).
+ACTED_IN2(director39, movie2).
+ACTED_IN2(director39, movie3).
+ACTED_IN2(director39, movie4).
+ACTED_IN2(director39, movie7).
+ACTED_IN2(director39, movie10).
+ACTED_IN2(director39, movie13).
+ACTED_IN2(director39, movie14).
+ACTED_IN2(director39, movie20).
+ACTED_IN2(director39, movie27).
+ACTED_IN2(director39, movie29).
+ACTED_IN2(director40, movie2).
+ACTED_IN2(director40, movie5).
+ACTED_IN2(director40, movie11).
+ACTED_IN2(director40, movie17).
+ACTED_IN2(director40, movie18).
+ACTED_IN2(director40, movie20).
+ACTED_IN2(director40, movie21).
+ACTED_IN2(director40, movie24).
+ACTED_IN2(director40, movie25).
+ACTED_IN2(director40, movie28).
+ACTED_IN2(director41, movie3).
+ACTED_IN2(director41, movie5).
+ACTED_IN2(director41, movie9).
+ACTED_IN2(director41, movie10).
+ACTED_IN2(director41, movie12).
+ACTED_IN2(director41, movie14).
+ACTED_IN2(director41, movie18).
+ACTED_IN2(director41, movie22).
+ACTED_IN2(director41, movie30).
+ACTED_IN2(director41, movie34).
+ACTED_IN2(director42, movie3).
+ACTED_IN2(director42, movie7).
+ACTED_IN2(director42, movie10).
+ACTED_IN2(director42, movie14).
+ACTED_IN2(director42, movie17).
+ACTED_IN2(director42, movie18).
+ACTED_IN2(director42, movie27).
+ACTED_IN2(director42, movie29).
+ACTED_IN2(director42, movie32).
+ACTED_IN2(director42, movie36).
+ACTED_IN2(director43, movie2).
+ACTED_IN2(director43, movie7).
+ACTED_IN2(director43, movie10).
+ACTED_IN2(director43, movie13).
+ACTED_IN2(director43, movie14).
+ACTED_IN2(director43, movie15).
+ACTED_IN2(director43, movie17).
+ACTED_IN2(director43, movie24).
+ACTED_IN2(director43, movie31).
+ACTED_IN2(director43, movie35).
+ACTED_IN2(director44, movie9).
+ACTED_IN2(director44, movie10).
+ACTED_IN2(director44, movie12).
+ACTED_IN2(director44, movie15).
+ACTED_IN2(director44, movie17).
+ACTED_IN2(director44, movie21).
+ACTED_IN2(director44, movie22).
+ACTED_IN2(director44, movie27).
+ACTED_IN2(director44, movie31).
+ACTED_IN2(director44, movie35).
+ACTED_IN2(director45, movie5).
+ACTED_IN2(director45, movie11).
+ACTED_IN2(director45, movie13).
+ACTED_IN2(director45, movie17).
+ACTED_IN2(director45, movie20).
+ACTED_IN2(director45, movie24).
+ACTED_IN2(director45, movie30).
+ACTED_IN2(director45, movie31).
+ACTED_IN2(director45, movie38).
+ACTED_IN2(director45, movie40).
+ACTED_IN2(director46, movie3).
+ACTED_IN2(director46, movie11).
+ACTED_IN2(director46, movie15).
+ACTED_IN2(director46, movie16).
+ACTED_IN2(director46, movie17).
+ACTED_IN2(director46, movie26).
+ACTED_IN2(director46, movie27).
+ACTED_IN2(director46, movie31).
+ACTED_IN2(director46, movie36).
+ACTED_IN2(director46, movie43).
+ACTED_IN2(director47, movie5).
+ACTED_IN2(director47, movie17).
+ACTED_IN2(director47, movie27).
+ACTED_IN2(director47, movie29).
+ACTED_IN2(director47, movie31).
+ACTED_IN2(director47, movie33).
+ACTED_IN2(director47, movie35).
+ACTED_IN2(director47, movie36).
+ACTED_IN2(director47, movie43).
+ACTED_IN2(director47, movie46).
+ACTED_IN2(director48, movie11).
+ACTED_IN2(director48, movie18).
+ACTED_IN2(director48, movie26).
+ACTED_IN2(director48, movie31).
+ACTED_IN2(director48, movie32).
+ACTED_IN2(director48, movie34).
+ACTED_IN2(director48, movie35).
+ACTED_IN2(director48, movie36).
+ACTED_IN2(director48, movie37).
+ACTED_IN2(director48, movie43).
+ACTED_IN2(director49, movie1).
+ACTED_IN2(director49, movie4).
+ACTED_IN2(director49, movie8).
+ACTED_IN2(director49, movie15).
+ACTED_IN2(director49, movie16).
+ACTED_IN2(director49, movie26).
+ACTED_IN2(director49, movie29).
+ACTED_IN2(director49, movie40).
+ACTED_IN2(director49, movie46).
+ACTED_IN2(director49, movie47).
+ACTED_IN2(director50, movie16).
+ACTED_IN2(director50, movie19).
+ACTED_IN2(director50, movie20).
+ACTED_IN2(director50, movie23).
+ACTED_IN2(director50, movie26).
+ACTED_IN2(director50, movie27).
+ACTED_IN2(director50, movie37).
+ACTED_IN2(director50, movie38).
+ACTED_IN2(director50, movie43).
+ACTED_IN2(director50, movie48).
+ACTED_IN2(director51, movie10).
+ACTED_IN2(director51, movie16).
+ACTED_IN2(director51, movie21).
+ACTED_IN2(director51, movie23).
+ACTED_IN2(director51, movie25).
+ACTED_IN2(director51, movie29).
+ACTED_IN2(director51, movie39).
+ACTED_IN2(director51, movie41).
+ACTED_IN2(director51, movie42).
+ACTED_IN2(director51, movie45).
+default !IN_GENRE3(*, *).
+IN_GENRE3(movie1, genre1).
+IN_GENRE3(movie1, genre2).
+IN_GENRE3(movie1, genre3).
+IN_GENRE3(movie1, genre4).
+IN_GENRE3(movie1, genre5).
+IN_GENRE3(movie1, genre6).
+IN_GENRE3(movie1, genre7).
+IN_GENRE3(movie1, genre8).
+IN_GENRE3(movie1, genre9).
+IN_GENRE3(movie1, genre10).
+IN_GENRE3(movie2, genre1).
+IN_GENRE3(movie2, genre2).
+IN_GENRE3(movie2, genre3).
+IN_GENRE3(movie2, genre4).
+IN_GENRE3(movie2, genre5).
+IN_GENRE3(movie2, genre6).
+IN_GENRE3(movie2, genre7).
+IN_GENRE3(movie2, genre8).
+IN_GENRE3(movie2, genre9).
+IN_GENRE3(movie2, genre10).
+IN_GENRE3(movie3, genre1).
+IN_GENRE3(movie3, genre2).
+IN_GENRE3(movie3, genre3).
+IN_GENRE3(movie3, genre4).
+IN_GENRE3(movie3, genre5).
+IN_GENRE3(movie3, genre6).
+IN_GENRE3(movie3, genre7).
+IN_GENRE3(movie3, genre9).
+IN_GENRE3(movie3, genre10).
+IN_GENRE3(movie3, genre11).
+IN_GENRE3(movie4, genre1).
+IN_GENRE3(movie4, genre2).
+IN_GENRE3(movie4, genre3).
+IN_GENRE3(movie4, genre4).
+IN_GENRE3(movie4, genre5).
+IN_GENRE3(movie4, genre6).
+IN_GENRE3(movie4, genre7).
+IN_GENRE3(movie4, genre8).
+IN_GENRE3(movie4, genre9).
+IN_GENRE3(movie4, genre11).
+IN_GENRE3(movie5, genre1).
+IN_GENRE3(movie5, genre2).
+IN_GENRE3(movie5, genre3).
+IN_GENRE3(movie5, genre4).
+IN_GENRE3(movie5, genre5).
+IN_GENRE3(movie5, genre6).
+IN_GENRE3(movie5, genre7).
+IN_GENRE3(movie5, genre8).
+IN_GENRE3(movie5, genre9).
+IN_GENRE3(movie5, genre10).
+IN_GENRE3(movie6, genre1).
+IN_GENRE3(movie6, genre2).
+IN_GENRE3(movie6, genre3).
+IN_GENRE3(movie6, genre4).
+IN_GENRE3(movie6, genre6).
+IN_GENRE3(movie6, genre8).
+IN_GENRE3(movie6, genre9).
+IN_GENRE3(movie6, genre10).
+IN_GENRE3(movie6, genre11).
+IN_GENRE3(movie6, genre12).
+IN_GENRE3(movie7, genre1).
+IN_GENRE3(movie7, genre2).
+IN_GENRE3(movie7, genre4).
+IN_GENRE3(movie7, genre6).
+IN_GENRE3(movie7, genre7).
+IN_GENRE3(movie7, genre8).
+IN_GENRE3(movie7, genre9).
+IN_GENRE3(movie7, genre10).
+IN_GENRE3(movie7, genre11).
+IN_GENRE3(movie7, genre13).
+IN_GENRE3(movie8, genre2).
+IN_GENRE3(movie8, genre3).
+IN_GENRE3(movie8, genre4).
+IN_GENRE3(movie8, genre5).
+IN_GENRE3(movie8, genre6).
+IN_GENRE3(movie8, genre7).
+IN_GENRE3(movie8, genre8).
+IN_GENRE3(movie8, genre9).
+IN_GENRE3(movie8, genre11).
+IN_GENRE3(movie8, genre12).
+IN_GENRE3(movie9, genre2).
+IN_GENRE3(movie9, genre3).
+IN_GENRE3(movie9, genre4).
+IN_GENRE3(movie9, genre5).
+IN_GENRE3(movie9, genre7).
+IN_GENRE3(movie9, genre8).
+IN_GENRE3(movie9, genre9).
+IN_GENRE3(movie9, genre10).
+IN_GENRE3(movie9, genre12).
+IN_GENRE3(movie9, genre13).
+IN_GENRE3(movie10, genre1).
+IN_GENRE3(movie10, genre2).
+IN_GENRE3(movie10, genre3).
+IN_GENRE3(movie10, genre4).
+IN_GENRE3(movie10, genre6).
+IN_GENRE3(movie10, genre7).
+IN_GENRE3(movie10, genre10).
+IN_GENRE3(movie10, genre11).
+IN_GENRE3(movie10, genre12).
+IN_GENRE3(movie10, genre13).
+IN_GENRE3(movie11, genre1).
+IN_GENRE3(movie11, genre3).
+IN_GENRE3(movie11, genre4).
+IN_GENRE3(movie11, genre5).
+IN_GENRE3(movie11, genre6).
+IN_GENRE3(movie11, genre7).
+IN_GENRE3(movie11, genre8).
+IN_GENRE3(movie11, genre9).
+IN_GENRE3(movie11, genre10).
+IN_GENRE3(movie11, genre11).
+IN_GENRE3(movie12, genre1).
+IN_GENRE3(movie12, genre2).
+IN_GENRE3(movie12, genre3).
+IN_GENRE3(movie12, genre7).
+IN_GENRE3(movie12, genre8).
+IN_GENRE3(movie12, genre9).
+IN_GENRE3(movie12, genre10).
+IN_GENRE3(movie12, genre11).
+IN_GENRE3(movie12, genre13).
+IN_GENRE3(movie12, genre14).
+IN_GENRE3(movie13, genre2).
+IN_GENRE3(movie13, genre3).
+IN_GENRE3(movie13, genre4).
+IN_GENRE3(movie13, genre5).
+IN_GENRE3(movie13, genre7).
+IN_GENRE3(movie13, genre10).
+IN_GENRE3(movie13, genre13).
+IN_GENRE3(movie13, genre14).
+IN_GENRE3(movie13, genre15).
+IN_GENRE3(movie13, genre16).
+IN_GENRE3(movie14, genre2).
+IN_GENRE3(movie14, genre3).
+IN_GENRE3(movie14, genre4).
+IN_GENRE3(movie14, genre5).
+IN_GENRE3(movie14, genre7).
+IN_GENRE3(movie14, genre8).
+IN_GENRE3(movie14, genre10).
+IN_GENRE3(movie14, genre15).
+IN_GENRE3(movie14, genre18).
+IN_GENRE3(movie14, genre19).
+IN_GENRE3(movie15, genre1).
+IN_GENRE3(movie15, genre3).
+IN_GENRE3(movie15, genre4).
+IN_GENRE3(movie15, genre5).
+IN_GENRE3(movie15, genre6).
+IN_GENRE3(movie15, genre10).
+IN_GENRE3(movie15, genre11).
+IN_GENRE3(movie15, genre12).
+IN_GENRE3(movie15, genre17).
+IN_GENRE3(movie15, genre19).
+IN_GENRE3(movie16, genre2).
+IN_GENRE3(movie16, genre3).
+IN_GENRE3(movie16, genre6).
+IN_GENRE3(movie16, genre8).
+IN_GENRE3(movie16, genre10).
+IN_GENRE3(movie16, genre11).
+IN_GENRE3(movie16, genre13).
+IN_GENRE3(movie16, genre14).
+IN_GENRE3(movie16, genre16).
+IN_GENRE3(movie16, genre18).
+IN_GENRE3(movie17, genre1).
+IN_GENRE3(movie17, genre7).
+IN_GENRE3(movie17, genre8).
+IN_GENRE3(movie17, genre9).
+IN_GENRE3(movie17, genre11).
+IN_GENRE3(movie17, genre12).
+IN_GENRE3(movie17, genre14).
+IN_GENRE3(movie17, genre16).
+IN_GENRE3(movie17, genre17).
+IN_GENRE3(movie17, genre19).
+IN_GENRE3(movie18, genre3).
+IN_GENRE3(movie18, genre4).
+IN_GENRE3(movie18, genre7).
+IN_GENRE3(movie18, genre8).
+IN_GENRE3(movie18, genre11).
+IN_GENRE3(movie18, genre12).
+IN_GENRE3(movie18, genre14).
+IN_GENRE3(movie18, genre15).
+IN_GENRE3(movie18, genre16).
+IN_GENRE3(movie18, genre19).
+IN_GENRE3(movie19, genre2).
+IN_GENRE3(movie19, genre3).
+IN_GENRE3(movie19, genre4).
+IN_GENRE3(movie19, genre5).
+IN_GENRE3(movie19, genre6).
+IN_GENRE3(movie19, genre11).
+IN_GENRE3(movie19, genre14).
+IN_GENRE3(movie19, genre18).
+IN_GENRE3(movie19, genre21).
+IN_GENRE3(movie19, genre22).
+IN_GENRE3(movie20, genre2).
+IN_GENRE3(movie20, genre6).
+IN_GENRE3(movie20, genre8).
+IN_GENRE3(movie20, genre9).
+IN_GENRE3(movie20, genre14).
+IN_GENRE3(movie20, genre19).
+IN_GENRE3(movie20, genre21).
+IN_GENRE3(movie20, genre22).
+IN_GENRE3(movie20, genre23).
+IN_GENRE3(movie20, genre24).
+IN_GENRE3(movie21, genre3).
+IN_GENRE3(movie21, genre4).
+IN_GENRE3(movie21, genre5).
+IN_GENRE3(movie21, genre6).
+IN_GENRE3(movie21, genre12).
+IN_GENRE3(movie21, genre16).
+IN_GENRE3(movie21, genre21).
+IN_GENRE3(movie21, genre24).
+IN_GENRE3(movie21, genre25).
+IN_GENRE3(movie21, genre26).
+IN_GENRE3(movie22, genre1).
+IN_GENRE3(movie22, genre4).
+IN_GENRE3(movie22, genre5).
+IN_GENRE3(movie22, genre8).
+IN_GENRE3(movie22, genre9).
+IN_GENRE3(movie22, genre14).
+IN_GENRE3(movie22, genre22).
+IN_GENRE3(movie22, genre23).
+IN_GENRE3(movie22, genre25).
+IN_GENRE3(movie22, genre26).
+IN_GENRE3(movie23, genre2).
+IN_GENRE3(movie23, genre7).
+IN_GENRE3(movie23, genre8).
+IN_GENRE3(movie23, genre9).
+IN_GENRE3(movie23, genre11).
+IN_GENRE3(movie23, genre15).
+IN_GENRE3(movie23, genre17).
+IN_GENRE3(movie23, genre19).
+IN_GENRE3(movie23, genre26).
+IN_GENRE3(movie23, genre27).
+IN_GENRE3(movie24, genre3).
+IN_GENRE3(movie24, genre5).
+IN_GENRE3(movie24, genre7).
+IN_GENRE3(movie24, genre8).
+IN_GENRE3(movie24, genre12).
+IN_GENRE3(movie24, genre18).
+IN_GENRE3(movie24, genre22).
+IN_GENRE3(movie24, genre23).
+IN_GENRE3(movie24, genre24).
+IN_GENRE3(movie24, genre30).
+IN_GENRE3(movie25, genre2).
+IN_GENRE3(movie25, genre4).
+IN_GENRE3(movie25, genre5).
+IN_GENRE3(movie25, genre15).
+IN_GENRE3(movie25, genre17).
+IN_GENRE3(movie25, genre21).
+IN_GENRE3(movie25, genre23).
+IN_GENRE3(movie25, genre26).
+IN_GENRE3(movie25, genre27).
+IN_GENRE3(movie25, genre28).
+IN_GENRE3(movie26, genre5).
+IN_GENRE3(movie26, genre8).
+IN_GENRE3(movie26, genre12).
+IN_GENRE3(movie26, genre14).
+IN_GENRE3(movie26, genre16).
+IN_GENRE3(movie26, genre17).
+IN_GENRE3(movie26, genre21).
+IN_GENRE3(movie26, genre26).
+IN_GENRE3(movie26, genre29).
+IN_GENRE3(movie26, genre30).
+IN_GENRE3(movie27, genre2).
+IN_GENRE3(movie27, genre8).
+IN_GENRE3(movie27, genre11).
+IN_GENRE3(movie27, genre16).
+IN_GENRE3(movie27, genre19).
+IN_GENRE3(movie27, genre22).
+IN_GENRE3(movie27, genre25).
+IN_GENRE3(movie27, genre28).
+IN_GENRE3(movie27, genre29).
+IN_GENRE3(movie27, genre32).
+IN_GENRE3(movie28, genre1).
+IN_GENRE3(movie28, genre3).
+IN_GENRE3(movie28, genre6).
+IN_GENRE3(movie28, genre9).
+IN_GENRE3(movie28, genre11).
+IN_GENRE3(movie28, genre12).
+IN_GENRE3(movie28, genre14).
+IN_GENRE3(movie28, genre16).
+IN_GENRE3(movie28, genre19).
+IN_GENRE3(movie28, genre31).
+IN_GENRE3(movie29, genre2).
+IN_GENRE3(movie29, genre7).
+IN_GENRE3(movie29, genre10).
+IN_GENRE3(movie29, genre14).
+IN_GENRE3(movie29, genre16).
+IN_GENRE3(movie29, genre17).
+IN_GENRE3(movie29, genre19).
+IN_GENRE3(movie29, genre24).
+IN_GENRE3(movie29, genre30).
+IN_GENRE3(movie29, genre32).
+IN_GENRE3(movie30, genre5).
+IN_GENRE3(movie30, genre9).
+IN_GENRE3(movie30, genre11).
+IN_GENRE3(movie30, genre12).
+IN_GENRE3(movie30, genre15).
+IN_GENRE3(movie30, genre16).
+IN_GENRE3(movie30, genre21).
+IN_GENRE3(movie30, genre22).
+IN_GENRE3(movie30, genre23).
+IN_GENRE3(movie30, genre30).
+IN_GENRE3(movie31, genre1).
+IN_GENRE3(movie31, genre3).
+IN_GENRE3(movie31, genre5).
+IN_GENRE3(movie31, genre12).
+IN_GENRE3(movie31, genre13).
+IN_GENRE3(movie31, genre14).
+IN_GENRE3(movie31, genre17).
+IN_GENRE3(movie31, genre18).
+IN_GENRE3(movie31, genre30).
+IN_GENRE3(movie31, genre32).
+IN_GENRE3(movie32, genre5).
+IN_GENRE3(movie32, genre6).
+IN_GENRE3(movie32, genre11).
+IN_GENRE3(movie32, genre13).
+IN_GENRE3(movie32, genre14).
+IN_GENRE3(movie32, genre16).
+IN_GENRE3(movie32, genre19).
+IN_GENRE3(movie32, genre26).
+IN_GENRE3(movie32, genre27).
+IN_GENRE3(movie32, genre33).
+IN_GENRE3(movie33, genre16).
+IN_GENRE3(movie33, genre17).
+IN_GENRE3(movie33, genre19).
+IN_GENRE3(movie33, genre21).
+IN_GENRE3(movie33, genre26).
+IN_GENRE3(movie33, genre27).
+IN_GENRE3(movie33, genre30).
+IN_GENRE3(movie33, genre34).
+IN_GENRE3(movie33, genre35).
+IN_GENRE3(movie33, genre37).
+IN_GENRE3(movie34, genre2).
+IN_GENRE3(movie34, genre5).
+IN_GENRE3(movie34, genre6).
+IN_GENRE3(movie34, genre7).
+IN_GENRE3(movie34, genre14).
+IN_GENRE3(movie34, genre16).
+IN_GENRE3(movie34, genre17).
+IN_GENRE3(movie34, genre19).
+IN_GENRE3(movie34, genre30).
+IN_GENRE3(movie34, genre31).
+IN_GENRE3(movie35, genre3).
+IN_GENRE3(movie35, genre4).
+IN_GENRE3(movie35, genre8).
+IN_GENRE3(movie35, genre10).
+IN_GENRE3(movie35, genre12).
+IN_GENRE3(movie35, genre18).
+IN_GENRE3(movie35, genre22).
+IN_GENRE3(movie35, genre25).
+IN_GENRE3(movie35, genre27).
+IN_GENRE3(movie35, genre38).
+IN_GENRE3(movie36, genre9).
+IN_GENRE3(movie36, genre10).
+IN_GENRE3(movie36, genre11).
+IN_GENRE3(movie36, genre14).
+IN_GENRE3(movie36, genre19).
+IN_GENRE3(movie36, genre20).
+IN_GENRE3(movie36, genre21).
+IN_GENRE3(movie36, genre24).
+IN_GENRE3(movie36, genre33).
+IN_GENRE3(movie36, genre34).
+IN_GENRE3(movie37, genre7).
+IN_GENRE3(movie37, genre12).
+IN_GENRE3(movie37, genre13).
+IN_GENRE3(movie37, genre14).
+IN_GENRE3(movie37, genre22).
+IN_GENRE3(movie37, genre25).
+IN_GENRE3(movie37, genre32).
+IN_GENRE3(movie37, genre33).
+IN_GENRE3(movie37, genre35).
+IN_GENRE3(movie37, genre40).
+IN_GENRE3(movie38, genre5).
+IN_GENRE3(movie38, genre6).
+IN_GENRE3(movie38, genre8).
+IN_GENRE3(movie38, genre12).
+IN_GENRE3(movie38, genre14).
+IN_GENRE3(movie38, genre22).
+IN_GENRE3(movie38, genre26).
+IN_GENRE3(movie38, genre33).
+IN_GENRE3(movie38, genre34).
+IN_GENRE3(movie38, genre36).
+IN_GENRE3(movie39, genre8).
+IN_GENRE3(movie39, genre9).
+IN_GENRE3(movie39, genre14).
+IN_GENRE3(movie39, genre15).
+IN_GENRE3(movie39, genre16).
+IN_GENRE3(movie39, genre17).
+IN_GENRE3(movie39, genre20).
+IN_GENRE3(movie39, genre23).
+IN_GENRE3(movie39, genre24).
+IN_GENRE3(movie39, genre32).
+IN_GENRE3(movie40, genre9).
+IN_GENRE3(movie40, genre18).
+IN_GENRE3(movie40, genre20).
+IN_GENRE3(movie40, genre24).
+IN_GENRE3(movie40, genre31).
+IN_GENRE3(movie40, genre32).
+IN_GENRE3(movie40, genre33).
+IN_GENRE3(movie40, genre35).
+IN_GENRE3(movie40, genre36).
+IN_GENRE3(movie40, genre37).
+IN_GENRE3(movie41, genre2).
+IN_GENRE3(movie41, genre10).
+IN_GENRE3(movie41, genre12).
+IN_GENRE3(movie41, genre21).
+IN_GENRE3(movie41, genre25).
+IN_GENRE3(movie41, genre33).
+IN_GENRE3(movie41, genre34).
+IN_GENRE3(movie41, genre35).
+IN_GENRE3(movie41, genre36).
+IN_GENRE3(movie41, genre37).
+IN_GENRE3(movie42, genre10).
+IN_GENRE3(movie42, genre12).
+IN_GENRE3(movie42, genre13).
+IN_GENRE3(movie42, genre15).
+IN_GENRE3(movie42, genre17).
+IN_GENRE3(movie42, genre24).
+IN_GENRE3(movie42, genre30).
+IN_GENRE3(movie42, genre32).
+IN_GENRE3(movie42, genre34).
+IN_GENRE3(movie42, genre37).
+IN_GENRE3(movie43, genre1).
+IN_GENRE3(movie43, genre8).
+IN_GENRE3(movie43, genre10).
+IN_GENRE3(movie43, genre16).
+IN_GENRE3(movie43, genre27).
+IN_GENRE3(movie43, genre28).
+IN_GENRE3(movie43, genre32).
+IN_GENRE3(movie43, genre38).
+IN_GENRE3(movie43, genre39).
+IN_GENRE3(movie43, genre41).
+IN_GENRE3(movie44, genre2).
+IN_GENRE3(movie44, genre3).
+IN_GENRE3(movie44, genre5).
+IN_GENRE3(movie44, genre19).
+IN_GENRE3(movie44, genre23).
+IN_GENRE3(movie44, genre29).
+IN_GENRE3(movie44, genre34).
+IN_GENRE3(movie44, genre37).
+IN_GENRE3(movie44, genre39).
+IN_GENRE3(movie44, genre41).
+IN_GENRE3(movie45, genre1).
+IN_GENRE3(movie45, genre3).
+IN_GENRE3(movie45, genre5).
+IN_GENRE3(movie45, genre11).
+IN_GENRE3(movie45, genre12).
+IN_GENRE3(movie45, genre17).
+IN_GENRE3(movie45, genre20).
+IN_GENRE3(movie45, genre28).
+IN_GENRE3(movie45, genre39).
+IN_GENRE3(movie45, genre44).
+IN_GENRE3(movie46, genre2).
+IN_GENRE3(movie46, genre5).
+IN_GENRE3(movie46, genre7).
+IN_GENRE3(movie46, genre12).
+IN_GENRE3(movie46, genre19).
+IN_GENRE3(movie46, genre23).
+IN_GENRE3(movie46, genre28).
+IN_GENRE3(movie46, genre30).
+IN_GENRE3(movie46, genre42).
+IN_GENRE3(movie46, genre44).
+IN_GENRE3(movie47, genre5).
+IN_GENRE3(movie47, genre8).
+IN_GENRE3(movie47, genre9).
+IN_GENRE3(movie47, genre12).
+IN_GENRE3(movie47, genre18).
+IN_GENRE3(movie47, genre22).
+IN_GENRE3(movie47, genre23).
+IN_GENRE3(movie47, genre28).
+IN_GENRE3(movie47, genre34).
+IN_GENRE3(movie47, genre39).
+IN_GENRE3(movie48, genre8).
+IN_GENRE3(movie48, genre14).
+IN_GENRE3(movie48, genre17).
+IN_GENRE3(movie48, genre23).
+IN_GENRE3(movie48, genre24).
+IN_GENRE3(movie48, genre27).
+IN_GENRE3(movie48, genre37).
+IN_GENRE3(movie48, genre40).
+IN_GENRE3(movie48, genre41).
+IN_GENRE3(movie48, genre42).
+IN_GENRE3(movie49, genre5).
+IN_GENRE3(movie49, genre14).
+IN_GENRE3(movie49, genre19).
+IN_GENRE3(movie49, genre25).
+IN_GENRE3(movie49, genre27).
+IN_GENRE3(movie49, genre31).
+IN_GENRE3(movie49, genre40).
+IN_GENRE3(movie49, genre42).
+IN_GENRE3(movie49, genre44).
+IN_GENRE3(movie49, genre45).
+IN_GENRE3(movie50, genre16).
+IN_GENRE3(movie50, genre20).
+IN_GENRE3(movie50, genre21).
+IN_GENRE3(movie50, genre24).
+IN_GENRE3(movie50, genre27).
+IN_GENRE3(movie50, genre33).
+IN_GENRE3(movie50, genre35).
+IN_GENRE3(movie50, genre43).
+IN_GENRE3(movie50, genre46).
+IN_GENRE3(movie50, genre47).
+IN_GENRE3(movie51, genre2).
+IN_GENRE3(movie51, genre8).
+IN_GENRE3(movie51, genre20).
+IN_GENRE3(movie51, genre21).
+IN_GENRE3(movie51, genre24).
+IN_GENRE3(movie51, genre25).
+IN_GENRE3(movie51, genre26).
+IN_GENRE3(movie51, genre39).
+IN_GENRE3(movie51, genre42).
+IN_GENRE3(movie51, genre43).
+IN_GENRE3(movie52, genre4).
+IN_GENRE3(movie52, genre9).
+IN_GENRE3(movie52, genre10).
+IN_GENRE3(movie52, genre12).
+IN_GENRE3(movie52, genre14).
+IN_GENRE3(movie52, genre24).
+IN_GENRE3(movie52, genre27).
+IN_GENRE3(movie52, genre43).
+IN_GENRE3(movie52, genre46).
+IN_GENRE3(movie52, genre47).
+IN_GENRE3(movie53, genre45).
+default !ACTED_IN4(*, *).
+ACTED_IN4(person1, movie1).
+ACTED_IN4(person1, movie2).
+ACTED_IN4(person1, movie3).
+ACTED_IN4(person1, movie4).
+ACTED_IN4(person1, movie5).
+ACTED_IN4(person1, movie6).
+ACTED_IN4(person1, movie7).
+ACTED_IN4(person1, movie8).
+ACTED_IN4(person1, movie9).
+ACTED_IN4(person1, movie10).
+ACTED_IN4(person2, movie1).
+ACTED_IN4(person2, movie2).
+ACTED_IN4(person2, movie3).
+ACTED_IN4(person2, movie4).
+ACTED_IN4(person2, movie5).
+ACTED_IN4(person2, movie6).
+ACTED_IN4(person2, movie7).
+ACTED_IN4(person2, movie8).
+ACTED_IN4(person2, movie9).
+ACTED_IN4(person2, movie10).
+ACTED_IN4(person3, movie1).
+ACTED_IN4(person3, movie2).
+ACTED_IN4(person3, movie3).
+ACTED_IN4(person3, movie4).
+ACTED_IN4(person3, movie5).
+ACTED_IN4(person3, movie6).
+ACTED_IN4(person3, movie7).
+ACTED_IN4(person3, movie8).
+ACTED_IN4(person3, movie9).
+ACTED_IN4(person3, movie11).
+ACTED_IN4(person4, movie1).
+ACTED_IN4(person4, movie2).
+ACTED_IN4(person4, movie3).
+ACTED_IN4(person4, movie4).
+ACTED_IN4(person4, movie5).
+ACTED_IN4(person4, movie6).
+ACTED_IN4(person4, movie7).
+ACTED_IN4(person4, movie9).
+ACTED_IN4(person4, movie10).
+ACTED_IN4(person4, movie11).
+ACTED_IN4(person5, movie1).
+ACTED_IN4(person5, movie2).
+ACTED_IN4(person5, movie3).
+ACTED_IN4(person5, movie4).
+ACTED_IN4(person5, movie5).
+ACTED_IN4(person5, movie6).
+ACTED_IN4(person5, movie7).
+ACTED_IN4(person5, movie8).
+ACTED_IN4(person5, movie9).
+ACTED_IN4(person5, movie12).
+ACTED_IN4(person6, movie1).
+ACTED_IN4(person6, movie2).
+ACTED_IN4(person6, movie3).
+ACTED_IN4(person6, movie4).
+ACTED_IN4(person6, movie5).
+ACTED_IN4(person6, movie6).
+ACTED_IN4(person6, movie7).
+ACTED_IN4(person6, movie8).
+ACTED_IN4(person6, movie9).
+ACTED_IN4(person6, movie10).
+ACTED_IN4(person7, movie1).
+ACTED_IN4(person7, movie2).
+ACTED_IN4(person7, movie3).
+ACTED_IN4(person7, movie4).
+ACTED_IN4(person7, movie5).
+ACTED_IN4(person7, movie6).
+ACTED_IN4(person7, movie7).
+ACTED_IN4(person7, movie8).
+ACTED_IN4(person7, movie9).
+ACTED_IN4(person7, movie10).
+ACTED_IN4(person8, movie1).
+ACTED_IN4(person8, movie2).
+ACTED_IN4(person8, movie3).
+ACTED_IN4(person8, movie4).
+ACTED_IN4(person8, movie5).
+ACTED_IN4(person8, movie6).
+ACTED_IN4(person8, movie7).
+ACTED_IN4(person8, movie8).
+ACTED_IN4(person8, movie10).
+ACTED_IN4(person8, movie11).
+ACTED_IN4(person9, movie1).
+ACTED_IN4(person9, movie2).
+ACTED_IN4(person9, movie3).
+ACTED_IN4(person9, movie4).
+ACTED_IN4(person9, movie5).
+ACTED_IN4(person9, movie6).
+ACTED_IN4(person9, movie7).
+ACTED_IN4(person9, movie8).
+ACTED_IN4(person9, movie9).
+ACTED_IN4(person9, movie10).
+ACTED_IN4(person10, movie1).
+ACTED_IN4(person10, movie2).
+ACTED_IN4(person10, movie3).
+ACTED_IN4(person10, movie4).
+ACTED_IN4(person10, movie5).
+ACTED_IN4(person10, movie6).
+ACTED_IN4(person10, movie7).
+ACTED_IN4(person10, movie8).
+ACTED_IN4(person10, movie9).
+ACTED_IN4(person10, movie10).
+ACTED_IN4(person11, movie1).
+ACTED_IN4(person11, movie3).
+ACTED_IN4(person11, movie4).
+ACTED_IN4(person11, movie5).
+ACTED_IN4(person11, movie6).
+ACTED_IN4(person11, movie8).
+ACTED_IN4(person11, movie9).
+ACTED_IN4(person11, movie10).
+ACTED_IN4(person11, movie11).
+ACTED_IN4(person11, movie12).
+ACTED_IN4(person12, movie1).
+ACTED_IN4(person12, movie2).
+ACTED_IN4(person12, movie3).
+ACTED_IN4(person12, movie4).
+ACTED_IN4(person12, movie6).
+ACTED_IN4(person12, movie8).
+ACTED_IN4(person12, movie9).
+ACTED_IN4(person12, movie10).
+ACTED_IN4(person12, movie11).
+ACTED_IN4(person12, movie12).
+ACTED_IN4(person13, movie1).
+ACTED_IN4(person13, movie3).
+ACTED_IN4(person13, movie4).
+ACTED_IN4(person13, movie5).
+ACTED_IN4(person13, movie6).
+ACTED_IN4(person13, movie7).
+ACTED_IN4(person13, movie8).
+ACTED_IN4(person13, movie9).
+ACTED_IN4(person13, movie11).
+ACTED_IN4(person13, movie12).
+ACTED_IN4(person14, movie1).
+ACTED_IN4(person14, movie2).
+ACTED_IN4(person14, movie5).
+ACTED_IN4(person14, movie6).
+ACTED_IN4(person14, movie7).
+ACTED_IN4(person14, movie8).
+ACTED_IN4(person14, movie9).
+ACTED_IN4(person14, movie10).
+ACTED_IN4(person14, movie11).
+ACTED_IN4(person14, movie12).
+ACTED_IN4(person15, movie1).
+ACTED_IN4(person15, movie2).
+ACTED_IN4(person15, movie4).
+ACTED_IN4(person15, movie5).
+ACTED_IN4(person15, movie6).
+ACTED_IN4(person15, movie7).
+ACTED_IN4(person15, movie11).
+ACTED_IN4(person15, movie12).
+ACTED_IN4(person15, movie13).
+ACTED_IN4(person15, movie14).
+ACTED_IN4(person16, movie1).
+ACTED_IN4(person16, movie2).
+ACTED_IN4(person16, movie3).
+ACTED_IN4(person16, movie7).
+ACTED_IN4(person16, movie9).
+ACTED_IN4(person16, movie12).
+ACTED_IN4(person16, movie14).
+ACTED_IN4(person16, movie15).
+ACTED_IN4(person16, movie16).
+ACTED_IN4(person16, movie18).
+ACTED_IN4(person17, movie2).
+ACTED_IN4(person17, movie3).
+ACTED_IN4(person17, movie4).
+ACTED_IN4(person17, movie6).
+ACTED_IN4(person17, movie8).
+ACTED_IN4(person17, movie12).
+ACTED_IN4(person17, movie15).
+ACTED_IN4(person17, movie18).
+ACTED_IN4(person17, movie19).
+ACTED_IN4(person17, movie20).
+ACTED_IN4(person18, movie2).
+ACTED_IN4(person18, movie5).
+ACTED_IN4(person18, movie6).
+ACTED_IN4(person18, movie7).
+ACTED_IN4(person18, movie8).
+ACTED_IN4(person18, movie9).
+ACTED_IN4(person18, movie12).
+ACTED_IN4(person18, movie13).
+ACTED_IN4(person18, movie15).
+ACTED_IN4(person18, movie19).
+ACTED_IN4(person19, movie2).
+ACTED_IN4(person19, movie5).
+ACTED_IN4(person19, movie6).
+ACTED_IN4(person19, movie8).
+ACTED_IN4(person19, movie9).
+ACTED_IN4(person19, movie11).
+ACTED_IN4(person19, movie14).
+ACTED_IN4(person19, movie18).
+ACTED_IN4(person19, movie19).
+ACTED_IN4(person19, movie20).
+ACTED_IN4(person20, movie1).
+ACTED_IN4(person20, movie2).
+ACTED_IN4(person20, movie3).
+ACTED_IN4(person20, movie7).
+ACTED_IN4(person20, movie8).
+ACTED_IN4(person20, movie11).
+ACTED_IN4(person20, movie12).
+ACTED_IN4(person20, movie14).
+ACTED_IN4(person20, movie15).
+ACTED_IN4(person20, movie18).
+ACTED_IN4(person21, movie6).
+ACTED_IN4(person21, movie7).
+ACTED_IN4(person21, movie16).
+ACTED_IN4(person21, movie18).
+ACTED_IN4(person21, movie20).
+ACTED_IN4(person21, movie21).
+ACTED_IN4(person21, movie22).
+ACTED_IN4(person21, movie24).
+ACTED_IN4(person21, movie25).
+ACTED_IN4(person21, movie26).
+ACTED_IN4(person22, movie1).
+ACTED_IN4(person22, movie5).
+ACTED_IN4(person22, movie6).
+ACTED_IN4(person22, movie7).
+ACTED_IN4(person22, movie9).
+ACTED_IN4(person22, movie16).
+ACTED_IN4(person22, movie20).
+ACTED_IN4(person22, movie22).
+ACTED_IN4(person22, movie24).
+ACTED_IN4(person22, movie25).
+ACTED_IN4(person23, movie1).
+ACTED_IN4(person23, movie5).
+ACTED_IN4(person23, movie8).
+ACTED_IN4(person23, movie9).
+ACTED_IN4(person23, movie11).
+ACTED_IN4(person23, movie15).
+ACTED_IN4(person23, movie17).
+ACTED_IN4(person23, movie21).
+ACTED_IN4(person23, movie24).
+ACTED_IN4(person23, movie25).
+ACTED_IN4(person24, movie3).
+ACTED_IN4(person24, movie5).
+ACTED_IN4(person24, movie7).
+ACTED_IN4(person24, movie10).
+ACTED_IN4(person24, movie11).
+ACTED_IN4(person24, movie12).
+ACTED_IN4(person24, movie14).
+ACTED_IN4(person24, movie20).
+ACTED_IN4(person24, movie25).
+ACTED_IN4(person24, movie27).
+ACTED_IN4(person25, movie2).
+ACTED_IN4(person25, movie4).
+ACTED_IN4(person25, movie11).
+ACTED_IN4(person25, movie13).
+ACTED_IN4(person25, movie15).
+ACTED_IN4(person25, movie18).
+ACTED_IN4(person25, movie20).
+ACTED_IN4(person25, movie22).
+ACTED_IN4(person25, movie26).
+ACTED_IN4(person25, movie27).
+ACTED_IN4(person26, movie3).
+ACTED_IN4(person26, movie8).
+ACTED_IN4(person26, movie9).
+ACTED_IN4(person26, movie14).
+ACTED_IN4(person26, movie16).
+ACTED_IN4(person26, movie17).
+ACTED_IN4(person26, movie21).
+ACTED_IN4(person26, movie22).
+ACTED_IN4(person26, movie26).
+ACTED_IN4(person26, movie27).
+ACTED_IN4(person27, movie4).
+ACTED_IN4(person27, movie6).
+ACTED_IN4(person27, movie9).
+ACTED_IN4(person27, movie10).
+ACTED_IN4(person27, movie11).
+ACTED_IN4(person27, movie14).
+ACTED_IN4(person27, movie17).
+ACTED_IN4(person27, movie25).
+ACTED_IN4(person27, movie28).
+ACTED_IN4(person27, movie29).
+ACTED_IN4(person28, movie4).
+ACTED_IN4(person28, movie5).
+ACTED_IN4(person28, movie8).
+ACTED_IN4(person28, movie11).
+ACTED_IN4(person28, movie12).
+ACTED_IN4(person28, movie15).
+ACTED_IN4(person28, movie19).
+ACTED_IN4(person28, movie26).
+ACTED_IN4(person28, movie28).
+ACTED_IN4(person28, movie30).
+ACTED_IN4(person29, movie3).
+ACTED_IN4(person29, movie4).
+ACTED_IN4(person29, movie5).
+ACTED_IN4(person29, movie7).
+ACTED_IN4(person29, movie9).
+ACTED_IN4(person29, movie15).
+ACTED_IN4(person29, movie16).
+ACTED_IN4(person29, movie18).
+ACTED_IN4(person29, movie28).
+ACTED_IN4(person29, movie30).
+ACTED_IN4(person30, movie3).
+ACTED_IN4(person30, movie6).
+ACTED_IN4(person30, movie11).
+ACTED_IN4(person30, movie13).
+ACTED_IN4(person30, movie15).
+ACTED_IN4(person30, movie17).
+ACTED_IN4(person30, movie21).
+ACTED_IN4(person30, movie23).
+ACTED_IN4(person30, movie26).
+ACTED_IN4(person30, movie28).
+ACTED_IN4(person31, movie1).
+ACTED_IN4(person31, movie3).
+ACTED_IN4(person31, movie4).
+ACTED_IN4(person31, movie14).
+ACTED_IN4(person31, movie16).
+ACTED_IN4(person31, movie19).
+ACTED_IN4(person31, movie20).
+ACTED_IN4(person31, movie23).
+ACTED_IN4(person31, movie26).
+ACTED_IN4(person31, movie27).
+ACTED_IN4(person32, movie11).
+ACTED_IN4(person32, movie17).
+ACTED_IN4(person32, movie18).
+ACTED_IN4(person32, movie19).
+ACTED_IN4(person32, movie20).
+ACTED_IN4(person32, movie21).
+ACTED_IN4(person32, movie22).
+ACTED_IN4(person32, movie24).
+ACTED_IN4(person32, movie28).
+ACTED_IN4(person32, movie29).
+ACTED_IN4(person33, movie1).
+ACTED_IN4(person33, movie4).
+ACTED_IN4(person33, movie8).
+ACTED_IN4(person33, movie9).
+ACTED_IN4(person33, movie15).
+ACTED_IN4(person33, movie18).
+ACTED_IN4(person33, movie21).
+ACTED_IN4(person33, movie23).
+ACTED_IN4(person33, movie25).
+ACTED_IN4(person33, movie30).
+ACTED_IN4(person34, movie1).
+ACTED_IN4(person34, movie5).
+ACTED_IN4(person34, movie7).
+ACTED_IN4(person34, movie8).
+ACTED_IN4(person34, movie9).
+ACTED_IN4(person34, movie14).
+ACTED_IN4(person34, movie16).
+ACTED_IN4(person34, movie23).
+ACTED_IN4(person34, movie26).
+ACTED_IN4(person34, movie31).
+ACTED_IN4(person35, movie7).
+ACTED_IN4(person35, movie11).
+ACTED_IN4(person35, movie14).
+ACTED_IN4(person35, movie17).
+ACTED_IN4(person35, movie21).
+ACTED_IN4(person35, movie23).
+ACTED_IN4(person35, movie28).
+ACTED_IN4(person35, movie35).
+ACTED_IN4(person35, movie38).
+ACTED_IN4(person35, movie39).
+ACTED_IN4(person36, movie2).
+ACTED_IN4(person36, movie5).
+ACTED_IN4(person36, movie10).
+ACTED_IN4(person36, movie15).
+ACTED_IN4(person36, movie17).
+ACTED_IN4(person36, movie18).
+ACTED_IN4(person36, movie22).
+ACTED_IN4(person36, movie24).
+ACTED_IN4(person36, movie32).
+ACTED_IN4(person36, movie33).
+ACTED_IN4(person37, movie7).
+ACTED_IN4(person37, movie9).
+ACTED_IN4(person37, movie14).
+ACTED_IN4(person37, movie17).
+ACTED_IN4(person37, movie20).
+ACTED_IN4(person37, movie21).
+ACTED_IN4(person37, movie24).
+ACTED_IN4(person37, movie32).
+ACTED_IN4(person37, movie36).
+ACTED_IN4(person37, movie37).
+ACTED_IN4(person38, movie1).
+ACTED_IN4(person38, movie2).
+ACTED_IN4(person38, movie4).
+ACTED_IN4(person38, movie5).
+ACTED_IN4(person38, movie7).
+ACTED_IN4(person38, movie8).
+ACTED_IN4(person38, movie10).
+ACTED_IN4(person38, movie17).
+ACTED_IN4(person38, movie22).
+ACTED_IN4(person38, movie44).
+ACTED_IN4(person39, movie9).
+ACTED_IN4(person39, movie12).
+ACTED_IN4(person39, movie18).
+ACTED_IN4(person39, movie24).
+ACTED_IN4(person39, movie28).
+ACTED_IN4(person39, movie31).
+ACTED_IN4(person39, movie33).
+ACTED_IN4(person39, movie34).
+ACTED_IN4(person39, movie35).
+ACTED_IN4(person39, movie41).
+ACTED_IN4(person40, movie5).
+ACTED_IN4(person40, movie8).
+ACTED_IN4(person40, movie13).
+ACTED_IN4(person40, movie16).
+ACTED_IN4(person40, movie26).
+ACTED_IN4(person40, movie29).
+ACTED_IN4(person40, movie31).
+ACTED_IN4(person40, movie33).
+ACTED_IN4(person40, movie39).
+ACTED_IN4(person40, movie44).
+ACTED_IN4(person41, movie5).
+ACTED_IN4(person41, movie7).
+ACTED_IN4(person41, movie9).
+ACTED_IN4(person41, movie14).
+ACTED_IN4(person41, movie20).
+ACTED_IN4(person41, movie23).
+ACTED_IN4(person41, movie36).
+ACTED_IN4(person41, movie39).
+ACTED_IN4(person41, movie40).
+ACTED_IN4(person41, movie43).
+ACTED_IN4(person42, movie1).
+ACTED_IN4(person42, movie5).
+ACTED_IN4(person42, movie14).
+ACTED_IN4(person42, movie21).
+ACTED_IN4(person42, movie31).
+ACTED_IN4(person42, movie38).
+ACTED_IN4(person42, movie39).
+ACTED_IN4(person42, movie44).
+ACTED_IN4(person42, movie45).
+ACTED_IN4(person42, movie46).
+ACTED_IN4(person43, movie3).
+ACTED_IN4(person43, movie15).
+ACTED_IN4(person43, movie19).
+ACTED_IN4(person43, movie22).
+ACTED_IN4(person43, movie24).
+ACTED_IN4(person43, movie28).
+ACTED_IN4(person43, movie30).
+ACTED_IN4(person43, movie34).
+ACTED_IN4(person43, movie39).
+ACTED_IN4(person43, movie42).
+ACTED_IN4(person44, movie13).
+ACTED_IN4(person44, movie16).
+ACTED_IN4(person44, movie17).
+ACTED_IN4(person44, movie25).
+ACTED_IN4(person44, movie26).
+ACTED_IN4(person44, movie27).
+ACTED_IN4(person44, movie28).
+ACTED_IN4(person44, movie33).
+ACTED_IN4(person44, movie37).
+ACTED_IN4(person44, movie46).
+ACTED_IN4(person45, movie5).
+ACTED_IN4(person45, movie7).
+ACTED_IN4(person45, movie11).
+ACTED_IN4(person45, movie14).
+ACTED_IN4(person45, movie20).
+ACTED_IN4(person45, movie27).
+ACTED_IN4(person45, movie34).
+ACTED_IN4(person45, movie44).
+ACTED_IN4(person45, movie46).
+ACTED_IN4(person45, movie49).
+default !RATED5(*, *).
+RATED5(user1, movie1).
+RATED5(user1, movie2).
+RATED5(user1, movie3).
+RATED5(user1, movie4).
+RATED5(user1, movie5).
+RATED5(user1, movie6).
+RATED5(user1, movie7).
+RATED5(user1, movie8).
+RATED5(user1, movie9).
+RATED5(user1, movie10).
+RATED5(user2, movie1).
+RATED5(user2, movie2).
+RATED5(user2, movie3).
+RATED5(user2, movie4).
+RATED5(user2, movie5).
+RATED5(user2, movie6).
+RATED5(user2, movie7).
+RATED5(user2, movie9).
+RATED5(user2, movie10).
+RATED5(user2, movie12).
+RATED5(user3, movie1).
+RATED5(user3, movie2).
+RATED5(user3, movie3).
+RATED5(user3, movie4).
+RATED5(user3, movie5).
+RATED5(user3, movie6).
+RATED5(user3, movie7).
+RATED5(user3, movie8).
+RATED5(user3, movie9).
+RATED5(user3, movie10).
+RATED5(user4, movie1).
+RATED5(user4, movie2).
+RATED5(user4, movie3).
+RATED5(user4, movie4).
+RATED5(user4, movie5).
+RATED5(user4, movie6).
+RATED5(user4, movie7).
+RATED5(user4, movie8).
+RATED5(user4, movie9).
+RATED5(user4, movie10).
+RATED5(user5, movie1).
+RATED5(user5, movie2).
+RATED5(user5, movie3).
+RATED5(user5, movie4).
+RATED5(user5, movie5).
+RATED5(user5, movie6).
+RATED5(user5, movie7).
+RATED5(user5, movie9).
+RATED5(user5, movie10).
+RATED5(user5, movie11).
+RATED5(user6, movie1).
+RATED5(user6, movie2).
+RATED5(user6, movie3).
+RATED5(user6, movie4).
+RATED5(user6, movie5).
+RATED5(user6, movie6).
+RATED5(user6, movie7).
+RATED5(user6, movie9).
+RATED5(user6, movie10).
+RATED5(user6, movie11).
+RATED5(user7, movie1).
+RATED5(user7, movie2).
+RATED5(user7, movie3).
+RATED5(user7, movie4).
+RATED5(user7, movie5).
+RATED5(user7, movie6).
+RATED5(user7, movie7).
+RATED5(user7, movie8).
+RATED5(user7, movie9).
+RATED5(user7, movie10).
+RATED5(user8, movie1).
+RATED5(user8, movie2).
+RATED5(user8, movie3).
+RATED5(user8, movie4).
+RATED5(user8, movie5).
+RATED5(user8, movie6).
+RATED5(user8, movie8).
+RATED5(user8, movie9).
+RATED5(user8, movie10).
+RATED5(user8, movie11).
+RATED5(user9, movie1).
+RATED5(user9, movie2).
+RATED5(user9, movie3).
+RATED5(user9, movie4).
+RATED5(user9, movie5).
+RATED5(user9, movie6).
+RATED5(user9, movie7).
+RATED5(user9, movie8).
+RATED5(user9, movie9).
+RATED5(user9, movie10).
+RATED5(user10, movie1).
+RATED5(user10, movie2).
+RATED5(user10, movie3).
+RATED5(user10, movie4).
+RATED5(user10, movie5).
+RATED5(user10, movie6).
+RATED5(user10, movie7).
+RATED5(user10, movie8).
+RATED5(user10, movie9).
+RATED5(user10, movie11).
+RATED5(user11, movie1).
+RATED5(user11, movie3).
+RATED5(user11, movie4).
+RATED5(user11, movie5).
+RATED5(user11, movie6).
+RATED5(user11, movie7).
+RATED5(user11, movie8).
+RATED5(user11, movie9).
+RATED5(user11, movie10).
+RATED5(user11, movie11).
+RATED5(user12, movie2).
+RATED5(user12, movie3).
+RATED5(user12, movie4).
+RATED5(user12, movie5).
+RATED5(user12, movie6).
+RATED5(user12, movie7).
+RATED5(user12, movie8).
+RATED5(user12, movie9).
+RATED5(user12, movie10).
+RATED5(user12, movie12).
+RATED5(user13, movie1).
+RATED5(user13, movie2).
+RATED5(user13, movie3).
+RATED5(user13, movie4).
+RATED5(user13, movie5).
+RATED5(user13, movie7).
+RATED5(user13, movie8).
+RATED5(user13, movie9).
+RATED5(user13, movie10).
+RATED5(user13, movie12).
+RATED5(user14, movie1).
+RATED5(user14, movie2).
+RATED5(user14, movie3).
+RATED5(user14, movie4).
+RATED5(user14, movie5).
+RATED5(user14, movie6).
+RATED5(user14, movie7).
+RATED5(user14, movie8).
+RATED5(user14, movie9).
+RATED5(user14, movie10).
+RATED5(user15, movie1).
+RATED5(user15, movie2).
+RATED5(user15, movie4).
+RATED5(user15, movie5).
+RATED5(user15, movie7).
+RATED5(user15, movie8).
+RATED5(user15, movie9).
+RATED5(user15, movie10).
+RATED5(user15, movie11).
+RATED5(user15, movie12).
+RATED5(user16, movie1).
+RATED5(user16, movie2).
+RATED5(user16, movie3).
+RATED5(user16, movie4).
+RATED5(user16, movie5).
+RATED5(user16, movie6).
+RATED5(user16, movie7).
+RATED5(user16, movie8).
+RATED5(user16, movie10).
+RATED5(user16, movie12).
+RATED5(user17, movie2).
+RATED5(user17, movie3).
+RATED5(user17, movie4).
+RATED5(user17, movie5).
+RATED5(user17, movie6).
+RATED5(user17, movie7).
+RATED5(user17, movie8).
+RATED5(user17, movie9).
+RATED5(user17, movie10).
+RATED5(user17, movie11).
+RATED5(user18, movie1).
+RATED5(user18, movie2).
+RATED5(user18, movie4).
+RATED5(user18, movie5).
+RATED5(user18, movie7).
+RATED5(user18, movie8).
+RATED5(user18, movie9).
+RATED5(user18, movie10).
+RATED5(user18, movie12).
+RATED5(user18, movie13).
+RATED5(user19, movie2).
+RATED5(user19, movie3).
+RATED5(user19, movie4).
+RATED5(user19, movie6).
+RATED5(user19, movie7).
+RATED5(user19, movie8).
+RATED5(user19, movie10).
+RATED5(user19, movie12).
+RATED5(user19, movie13).
+RATED5(user19, movie14).
+RATED5(user20, movie1).
+RATED5(user20, movie2).
+RATED5(user20, movie3).
+RATED5(user20, movie5).
+RATED5(user20, movie6).
+RATED5(user20, movie7).
+RATED5(user20, movie9).
+RATED5(user20, movie10).
+RATED5(user20, movie13).
+RATED5(user20, movie14).
+RATED5(user21, movie2).
+RATED5(user21, movie3).
+RATED5(user21, movie6).
+RATED5(user21, movie7).
+RATED5(user21, movie8).
+RATED5(user21, movie9).
+RATED5(user21, movie10).
+RATED5(user21, movie11).
+RATED5(user21, movie12).
+RATED5(user21, movie13).
+RATED5(user22, movie2).
+RATED5(user22, movie3).
+RATED5(user22, movie5).
+RATED5(user22, movie7).
+RATED5(user22, movie9).
+RATED5(user22, movie10).
+RATED5(user22, movie11).
+RATED5(user22, movie12).
+RATED5(user22, movie13).
+RATED5(user22, movie16).
+RATED5(user23, movie1).
+RATED5(user23, movie3).
+RATED5(user23, movie4).
+RATED5(user23, movie5).
+RATED5(user23, movie7).
+RATED5(user23, movie8).
+RATED5(user23, movie11).
+RATED5(user23, movie12).
+RATED5(user23, movie13).
+RATED5(user23, movie14).
+RATED5(user24, movie3).
+RATED5(user24, movie4).
+RATED5(user24, movie5).
+RATED5(user24, movie6).
+RATED5(user24, movie7).
+RATED5(user24, movie11).
+RATED5(user24, movie12).
+RATED5(user24, movie14).
+RATED5(user24, movie15).
+RATED5(user24, movie16).
+RATED5(user25, movie1).
+RATED5(user25, movie3).
+RATED5(user25, movie4).
+RATED5(user25, movie8).
+RATED5(user25, movie11).
+RATED5(user25, movie13).
+RATED5(user25, movie14).
+RATED5(user25, movie15).
+RATED5(user25, movie17).
+RATED5(user25, movie18).
+RATED5(user26, movie1).
+RATED5(user26, movie3).
+RATED5(user26, movie6).
+RATED5(user26, movie7).
+RATED5(user26, movie8).
+RATED5(user26, movie10).
+RATED5(user26, movie13).
+RATED5(user26, movie14).
+RATED5(user26, movie16).
+RATED5(user26, movie18).
+RATED5(user27, movie1).
+RATED5(user27, movie2).
+RATED5(user27, movie7).
+RATED5(user27, movie8).
+RATED5(user27, movie9).
+RATED5(user27, movie11).
+RATED5(user27, movie14).
+RATED5(user27, movie15).
+RATED5(user27, movie16).
+RATED5(user27, movie17).
+RATED5(user28, movie1).
+RATED5(user28, movie4).
+RATED5(user28, movie7).
+RATED5(user28, movie9).
+RATED5(user28, movie11).
+RATED5(user28, movie12).
+RATED5(user28, movie14).
+RATED5(user28, movie15).
+RATED5(user28, movie16).
+RATED5(user28, movie19).
+RATED5(user29, movie1).
+RATED5(user29, movie2).
+RATED5(user29, movie5).
+RATED5(user29, movie7).
+RATED5(user29, movie9).
+RATED5(user29, movie12).
+RATED5(user29, movie14).
+RATED5(user29, movie16).
+RATED5(user29, movie17).
+RATED5(user29, movie19).
+RATED5(user30, movie1).
+RATED5(user30, movie5).
+RATED5(user30, movie6).
+RATED5(user30, movie8).
+RATED5(user30, movie10).
+RATED5(user30, movie13).
+RATED5(user30, movie14).
+RATED5(user30, movie16).
+RATED5(user30, movie17).
+RATED5(user30, movie22).
+RATED5(user31, movie2).
+RATED5(user31, movie7).
+RATED5(user31, movie9).
+RATED5(user31, movie10).
+RATED5(user31, movie11).
+RATED5(user31, movie12).
+RATED5(user31, movie15).
+RATED5(user31, movie16).
+RATED5(user31, movie19).
+RATED5(user31, movie21).
+RATED5(user32, movie1).
+RATED5(user32, movie2).
+RATED5(user32, movie3).
+RATED5(user32, movie6).
+RATED5(user32, movie10).
+RATED5(user32, movie12).
+RATED5(user32, movie18).
+RATED5(user32, movie19).
+RATED5(user32, movie25).
+RATED5(user32, movie26).
+RATED5(user33, movie1).
+RATED5(user33, movie3).
+RATED5(user33, movie13).
+RATED5(user33, movie14).
+RATED5(user33, movie15).
+RATED5(user33, movie16).
+RATED5(user33, movie19).
+RATED5(user33, movie20).
+RATED5(user33, movie25).
+RATED5(user33, movie26).
+RATED5(user34, movie1).
+RATED5(user34, movie2).
+RATED5(user34, movie3).
+RATED5(user34, movie4).
+RATED5(user34, movie7).
+RATED5(user34, movie14).
+RATED5(user34, movie18).
+RATED5(user34, movie24).
+RATED5(user34, movie26).
+RATED5(user34, movie28).
+RATED5(user35, movie8).
+RATED5(user35, movie13).
+RATED5(user35, movie18).
+RATED5(user35, movie19).
+RATED5(user35, movie22).
+RATED5(user35, movie24).
+RATED5(user35, movie25).
+RATED5(user35, movie27).
+RATED5(user35, movie28).
+RATED5(user35, movie29).
+RATED5(user36, movie1).
+RATED5(user36, movie3).
+RATED5(user36, movie9).
+RATED5(user36, movie13).
+RATED5(user36, movie16).
+RATED5(user36, movie18).
+RATED5(user36, movie22).
+RATED5(user36, movie23).
+RATED5(user36, movie25).
+RATED5(user36, movie26).
+RATED5(user37, movie2).
+RATED5(user37, movie3).
+RATED5(user37, movie4).
+RATED5(user37, movie5).
+RATED5(user37, movie10).
+RATED5(user37, movie12).
+RATED5(user37, movie15).
+RATED5(user37, movie18).
+RATED5(user37, movie19).
+RATED5(user37, movie20).
+RATED5(user38, movie1).
+RATED5(user38, movie9).
+RATED5(user38, movie12).
+RATED5(user38, movie25).
+RATED5(user38, movie27).
+RATED5(user38, movie30).
+RATED5(user38, movie31).
+RATED5(user38, movie33).
+RATED5(user38, movie34).
+RATED5(user38, movie35).
+RATED5(user39, movie4).
+RATED5(user39, movie7).
+RATED5(user39, movie13).
+RATED5(user39, movie15).
+RATED5(user39, movie17).
+RATED5(user39, movie19).
+RATED5(user39, movie20).
+RATED5(user39, movie30).
+RATED5(user39, movie36).
+RATED5(user39, movie40).
+RATED5(user40, movie4).
+RATED5(user40, movie12).
+RATED5(user40, movie17).
+RATED5(user40, movie26).
+RATED5(user40, movie27).
+RATED5(user40, movie29).
+RATED5(user40, movie31).
+RATED5(user40, movie33).
+RATED5(user40, movie37).
+RATED5(user40, movie41).
+RATED5(user41, movie2).
+RATED5(user41, movie6).
+RATED5(user41, movie13).
+RATED5(user41, movie14).
+RATED5(user41, movie18).
+RATED5(user41, movie19).
+RATED5(user41, movie23).
+RATED5(user41, movie28).
+RATED5(user41, movie29).
+RATED5(user41, movie41).
+RATED5(user42, movie6).
+RATED5(user42, movie9).
+RATED5(user42, movie10).
+RATED5(user42, movie19).
+RATED5(user42, movie21).
+RATED5(user42, movie22).
+RATED5(user42, movie23).
+RATED5(user42, movie25).
+RATED5(user42, movie27).
+RATED5(user42, movie37).
+RATED5(user43, movie3).
+RATED5(user43, movie5).
+RATED5(user43, movie12).
+RATED5(user43, movie24).
+RATED5(user43, movie28).
+RATED5(user43, movie30).
+RATED5(user43, movie31).
+RATED5(user43, movie32).
+RATED5(user43, movie43).
+RATED5(user43, movie44).
+RATED5(user44, movie6).
+RATED5(user44, movie7).
+RATED5(user44, movie9).
+RATED5(user44, movie12).
+RATED5(user44, movie21).
+RATED5(user44, movie36).
+RATED5(user44, movie37).
+RATED5(user44, movie40).
+RATED5(user44, movie43).
+RATED5(user44, movie46).
+RATED5(user45, movie5).
+RATED5(user45, movie6).
+RATED5(user45, movie16).
+RATED5(user45, movie20).
+RATED5(user45, movie24).
+RATED5(user45, movie29).
+RATED5(user45, movie33).
+RATED5(user45, movie34).
+RATED5(user45, movie37).
+RATED5(user45, movie52).

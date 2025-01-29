@@ -1,0 +1,130 @@
+class Actor{
+    Movie[1..10] DIRECTED1
+    Movie[1..10] ACTED_IN2
+}
+
+class Director{
+    Movie[1..10] DIRECTED3
+    Movie[1..10] ACTED_IN4
+}
+
+class Genre.
+
+class Movie{
+    Genre[1..10] IN_GENRE5
+}
+
+class Person{
+    Movie[1..10] DIRECTED6
+    Movie[1..10] ACTED_IN7
+}
+
+class User{
+    Movie[1..10] RATED8
+}
+
+class enjambment{
+    Person[1..10] pretyphoid9
+}
+
+declare person1, director1, user1, person2, actor1, enjambment1, user2, genre1, user3, enjambment2, user4, enjambment3, enjambment4, director2, actor2, genre2, user5, genre3, genre4, genre5, movie1, enjambment5, movie2, genre6, genre7, user6, genre8, enjambment6, enjambment7, genre9.
+!exists(Actor::new).
+!exists(Director::new).
+!exists(Genre::new).
+!exists(Movie::new).
+!exists(Person::new).
+!exists(User::new).
+!exists(enjambment::new).
+Person(person1).
+Director(director1).
+User(user1).
+Person(person2).
+Actor(actor1).
+enjambment(enjambment1).
+User(user2).
+Genre(genre1).
+User(user3).
+enjambment(enjambment2).
+User(user4).
+enjambment(enjambment3).
+enjambment(enjambment4).
+Director(director2).
+Actor(actor2).
+Genre(genre2).
+User(user5).
+Genre(genre3).
+Genre(genre4).
+Genre(genre5).
+Movie(movie1).
+enjambment(enjambment5).
+Movie(movie2).
+Genre(genre6).
+Genre(genre7).
+User(user6).
+Genre(genre8).
+enjambment(enjambment6).
+enjambment(enjambment7).
+Genre(genre9).
+default !DIRECTED1(*, *).
+DIRECTED1(actor1, movie1).
+DIRECTED1(actor1, movie2).
+DIRECTED1(actor2, movie1).
+default !ACTED_IN2(*, *).
+ACTED_IN2(actor1, movie2).
+ACTED_IN2(actor2, movie1).
+ACTED_IN2(actor2, movie2).
+default !DIRECTED3(*, *).
+DIRECTED3(director1, movie1).
+DIRECTED3(director1, movie2).
+DIRECTED3(director2, movie1).
+DIRECTED3(director2, movie2).
+default !ACTED_IN4(*, *).
+ACTED_IN4(director1, movie1).
+ACTED_IN4(director2, movie1).
+ACTED_IN4(director2, movie2).
+default !IN_GENRE5(*, *).
+IN_GENRE5(movie1, genre1).
+IN_GENRE5(movie1, genre2).
+IN_GENRE5(movie1, genre3).
+IN_GENRE5(movie1, genre4).
+IN_GENRE5(movie1, genre5).
+IN_GENRE5(movie1, genre6).
+IN_GENRE5(movie1, genre7).
+IN_GENRE5(movie1, genre9).
+IN_GENRE5(movie2, genre1).
+IN_GENRE5(movie2, genre2).
+IN_GENRE5(movie2, genre3).
+IN_GENRE5(movie2, genre5).
+IN_GENRE5(movie2, genre6).
+IN_GENRE5(movie2, genre7).
+IN_GENRE5(movie2, genre8).
+default !DIRECTED6(*, *).
+DIRECTED6(person1, movie2).
+DIRECTED6(person2, movie2).
+default !ACTED_IN7(*, *).
+ACTED_IN7(person1, movie2).
+ACTED_IN7(person2, movie1).
+ACTED_IN7(person2, movie2).
+default !RATED8(*, *).
+RATED8(user1, movie1).
+RATED8(user1, movie2).
+RATED8(user2, movie1).
+RATED8(user2, movie2).
+RATED8(user3, movie2).
+RATED8(user4, movie2).
+RATED8(user5, movie2).
+RATED8(user6, movie1).
+default !pretyphoid9(*, *).
+pretyphoid9(enjambment1, person1).
+pretyphoid9(enjambment1, person2).
+pretyphoid9(enjambment2, person1).
+pretyphoid9(enjambment2, person2).
+pretyphoid9(enjambment3, person1).
+pretyphoid9(enjambment3, person2).
+pretyphoid9(enjambment4, person1).
+pretyphoid9(enjambment4, person2).
+pretyphoid9(enjambment5, person1).
+pretyphoid9(enjambment5, person2).
+pretyphoid9(enjambment6, person1).
+pretyphoid9(enjambment6, person2).
+pretyphoid9(enjambment7, person1).

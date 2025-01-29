@@ -1,0 +1,131 @@
+class Actor{
+    Movie[1..10] ACTED_IN1
+}
+
+class Director{
+    Movie[1..10] ACTED_IN2
+}
+
+class Genre.
+
+class Movie{
+    Genre[1..10] IN_GENRE3
+}
+
+class Person{
+    Movie[1..10] ACTED_IN4
+}
+
+class User{
+    Movie[1..10] RATED5
+}
+
+declare movie1, movie2, actor1, genre1, actor2, user1, actor3, director1, actor4, person1, person2, actor5, genre2, director2, director3, person3, person4, user2, person5, person6, genre3, person7, person8, movie3, director4, user3, actor6, genre4, genre5, person9.
+!exists(Actor::new).
+!exists(Director::new).
+!exists(Genre::new).
+!exists(Movie::new).
+!exists(Person::new).
+!exists(User::new).
+Movie(movie1).
+Movie(movie2).
+Actor(actor1).
+Genre(genre1).
+Actor(actor2).
+User(user1).
+Actor(actor3).
+Director(director1).
+Actor(actor4).
+Person(person1).
+Person(person2).
+Actor(actor5).
+Genre(genre2).
+Director(director2).
+Director(director3).
+Person(person3).
+Person(person4).
+User(user2).
+Person(person5).
+Person(person6).
+Genre(genre3).
+Person(person7).
+Person(person8).
+Movie(movie3).
+Director(director4).
+User(user3).
+Actor(actor6).
+Genre(genre4).
+Genre(genre5).
+Person(person9).
+default !ACTED_IN1(*, *).
+ACTED_IN1(actor1, movie1).
+ACTED_IN1(actor1, movie2).
+ACTED_IN1(actor1, movie3).
+ACTED_IN1(actor2, movie1).
+ACTED_IN1(actor2, movie2).
+ACTED_IN1(actor2, movie3).
+ACTED_IN1(actor3, movie1).
+ACTED_IN1(actor3, movie2).
+ACTED_IN1(actor3, movie3).
+ACTED_IN1(actor4, movie1).
+ACTED_IN1(actor4, movie2).
+ACTED_IN1(actor4, movie3).
+ACTED_IN1(actor5, movie1).
+ACTED_IN1(actor5, movie2).
+ACTED_IN1(actor5, movie3).
+ACTED_IN1(actor6, movie2).
+ACTED_IN1(actor6, movie3).
+default !ACTED_IN2(*, *).
+ACTED_IN2(director1, movie1).
+ACTED_IN2(director1, movie2).
+ACTED_IN2(director1, movie3).
+ACTED_IN2(director2, movie1).
+ACTED_IN2(director2, movie2).
+ACTED_IN2(director3, movie1).
+ACTED_IN2(director3, movie2).
+ACTED_IN2(director3, movie3).
+ACTED_IN2(director4, movie1).
+ACTED_IN2(director4, movie2).
+ACTED_IN2(director4, movie3).
+default !IN_GENRE3(*, *).
+IN_GENRE3(movie1, genre1).
+IN_GENRE3(movie1, genre2).
+IN_GENRE3(movie1, genre3).
+IN_GENRE3(movie2, genre1).
+IN_GENRE3(movie2, genre2).
+IN_GENRE3(movie2, genre3).
+IN_GENRE3(movie2, genre4).
+IN_GENRE3(movie2, genre5).
+IN_GENRE3(movie3, genre2).
+IN_GENRE3(movie3, genre3).
+default !ACTED_IN4(*, *).
+ACTED_IN4(person1, movie1).
+ACTED_IN4(person1, movie2).
+ACTED_IN4(person1, movie3).
+ACTED_IN4(person2, movie1).
+ACTED_IN4(person2, movie2).
+ACTED_IN4(person2, movie3).
+ACTED_IN4(person3, movie1).
+ACTED_IN4(person3, movie2).
+ACTED_IN4(person4, movie1).
+ACTED_IN4(person4, movie2).
+ACTED_IN4(person4, movie3).
+ACTED_IN4(person5, movie1).
+ACTED_IN4(person5, movie2).
+ACTED_IN4(person5, movie3).
+ACTED_IN4(person6, movie1).
+ACTED_IN4(person6, movie2).
+ACTED_IN4(person6, movie3).
+ACTED_IN4(person7, movie2).
+ACTED_IN4(person7, movie3).
+ACTED_IN4(person8, movie1).
+ACTED_IN4(person8, movie2).
+ACTED_IN4(person9, movie3).
+default !RATED5(*, *).
+RATED5(user1, movie1).
+RATED5(user1, movie2).
+RATED5(user1, movie3).
+RATED5(user2, movie1).
+RATED5(user2, movie2).
+RATED5(user2, movie3).
+RATED5(user3, movie2).
