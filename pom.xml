@@ -838,6 +838,12 @@
                 <output>file</output>
             </configuration>
         </plugin>
+
+        <plugin>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-maven</artifactId>
+            <version>LATEST</version>
+        </plugin>
       </plugins>
     </pluginManagement>
 
@@ -940,6 +946,11 @@
         <artifactId>jacoco-maven-plugin</artifactId>
         <!-- Version and other configurations are inherited from pluginManagement -->
       </plugin>
+
+      <plugin>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-maven</artifactId>
+        </plugin>
 
     </plugins>
   </build>
